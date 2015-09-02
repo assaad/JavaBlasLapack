@@ -99,19 +99,19 @@ public final class Dtgsen
       {
         if ((paramArrayOfDouble1[(i5 + 1 - 1 + (i5 - 1) * paramInt5 + paramInt4)] != 0.0D ? 0 : 1) != 0)
         {
-          if (paramArrayOfBoolean[(i5 - 1 + paramInt2)] != 0) {
+          if (paramArrayOfBoolean[(i5 - 1 + paramInt2)] != false) {
             paramintW1.val += 1;
           }
         }
         else
         {
           j = 1;
-          if (((paramArrayOfBoolean[(i5 - 1 + paramInt2)] == 0) && (paramArrayOfBoolean[(i5 + 1 - 1 + paramInt2)] == 0) ? 0 : 1) != 0) {
+          if (((paramArrayOfBoolean[(i5 - 1 + paramInt2)] == false) && (paramArrayOfBoolean[(i5 + 1 - 1 + paramInt2)] == false) ? 0 : 1) != 0) {
             paramintW1.val += 2;
           }
         }
       }
-      else if (paramArrayOfBoolean[(paramInt3 - 1 + paramInt2)] != 0) {
+      else if (paramArrayOfBoolean[(paramInt3 - 1 + paramInt2)] != false) {
         paramintW1.val += 1;
       }
       i5 += 1;
@@ -187,7 +187,7 @@ public final class Dtgsen
       localintW4.val = 0;
       j = 0;
       i5 = 1;
-      for (i11 = paramInt3 - 1 + 1; i11 > 0; i11--)
+      for (int i11 = paramInt3 - 1 + 1; i11 > 0; i11--)
       {
         if (j != 0)
         {
@@ -195,12 +195,12 @@ public final class Dtgsen
         }
         else
         {
-          k = paramArrayOfBoolean[(i5 - 1 + paramInt2)];
+          k = paramArrayOfBoolean[(i5 - 1 + paramInt2)]==false ?0:1;
           if ((i5 >= paramInt3 ? 0 : 1) != 0) {
             if ((paramArrayOfDouble1[(i5 + 1 - 1 + (i5 - 1) * paramInt5 + paramInt4)] == 0.0D ? 0 : 1) != 0)
             {
               j = 1;
-              k = (k == 0) && (paramArrayOfBoolean[(i5 + 1 - 1 + paramInt2)] == 0) ? 0 : 1;
+              k = (k == 0) && (paramArrayOfBoolean[(i5 + 1 - 1 + paramInt2)] == false) ? 0 : 1;
             }
           }
           if (k != 0)
@@ -309,7 +309,7 @@ public final class Dtgsen
     }
     j = 0;
     i5 = 1;
-    for (i11 = paramInt3 - 1 + 1; i11 > 0; i11--)
+    for (int i11 = paramInt3 - 1 + 1; i11 > 0; i11--)
     {
       if (j != 0)
       {

@@ -93,7 +93,7 @@ public final class Dhseqr
       i += 1;
     }
     i = paramInt3 + 1;
-    for (n = paramInt1 - (paramInt3 + 1) + 1; n > 0; n--)
+    for (int n = paramInt1 - (paramInt3 + 1) + 1; n > 0; n--)
     {
       paramArrayOfDouble2[(i - 1 + paramInt6)] = paramArrayOfDouble1[(i - 1 + (i - 1) * paramInt5 + paramInt4)];
       paramArrayOfDouble3[(i - 1 + paramInt7)] = 0.0D;

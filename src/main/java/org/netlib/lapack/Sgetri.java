@@ -79,7 +79,7 @@ public final class Sgetri
     if (((i5 < paramInt1 ? 0 : 1) == 0 ? 0 : 1) != 0)
     {
       m = paramInt1;
-      for (i8 = (1 - paramInt1 + -1) / -1; i8 > 0; i8--)
+      for (int i8 = (1 - paramInt1 + -1) / -1; i8 > 0; i8--)
       {
         j = m + 1;
         for (i9 = paramInt1 - (m + 1) + 1; i9 > 0; i9--)
@@ -98,7 +98,7 @@ public final class Sgetri
     {
       i7 = (paramInt1 - 1) / i5 * i5 + 1;
       m = i7;
-      for (i8 = (1 - i7 + -i5) / -i5; i8 > 0; i8--)
+      for (int i8 = (1 - i7 + -i5) / -i5; i8 > 0; i8--)
       {
         n = Math.min(i5, paramInt1 - m + 1);
         i1 = m;

@@ -52,7 +52,7 @@ public final class Dsyrfs
     if (((paramInt2 != 0 ? 0 : 1) == 0 ? 0 : 1) != 0)
     {
       k = 1;
-      for (i1 = paramInt2 - 1 + 1; i1 > 0; i1--)
+      for (int i1 = paramInt2 - 1 + 1; i1 > 0; i1--)
       {
         paramArrayOfDouble5[(k - 1 + paramInt12)] = 0.0D;
         paramArrayOfDouble6[(k - 1 + paramInt13)] = 0.0D;
@@ -75,7 +75,7 @@ public final class Dsyrfs
         Dcopy.dcopy(paramInt1, paramArrayOfDouble3, 1 - 1 + (k - 1) * paramInt9 + paramInt8, 1, paramArrayOfDouble7, paramInt1 + 1 - 1 + paramInt14, 1);
         Dsymv.dsymv(paramString, paramInt1, -1.0D, paramArrayOfDouble1, paramInt3, paramInt4, paramArrayOfDouble4, 1 - 1 + (k - 1) * paramInt11 + paramInt10, 1, 1.0D, paramArrayOfDouble7, paramInt1 + 1 - 1 + paramInt14, 1);
         j = 1;
-        for (i2 = paramInt1 - 1 + 1; i2 > 0; i2--)
+        for (int i2 = paramInt1 - 1 + 1; i2 > 0; i2--)
         {
           paramArrayOfDouble7[(j - 1 + paramInt14)] = Math.abs(paramArrayOfDouble3[(j - 1 + (k - 1) * paramInt9 + paramInt8)]);
           j += 1;
@@ -84,7 +84,7 @@ public final class Dsyrfs
         if (bool)
         {
           m = 1;
-          for (i2 = paramInt1 - 1 + 1; i2 > 0; i2--)
+          for (int i2 = paramInt1 - 1 + 1; i2 > 0; i2--)
           {
             d3 = 0.0D;
             d7 = Math.abs(paramArrayOfDouble4[(m - 1 + (k - 1) * paramInt11 + paramInt10)]);
@@ -102,7 +102,7 @@ public final class Dsyrfs
         else
         {
           m = 1;
-          for (i2 = paramInt1 - 1 + 1; i2 > 0; i2--)
+          for (int i2 = paramInt1 - 1 + 1; i2 > 0; i2--)
           {
             d3 = 0.0D;
             d7 = Math.abs(paramArrayOfDouble4[(m - 1 + (k - 1) * paramInt11 + paramInt10)]);
@@ -120,7 +120,7 @@ public final class Dsyrfs
         }
         d3 = 0.0D;
         j = 1;
-        for (i2 = paramInt1 - 1 + 1; i2 > 0; i2--)
+        for (int i2 = paramInt1 - 1 + 1; i2 > 0; i2--)
         {
           if ((paramArrayOfDouble7[(j - 1 + paramInt14)] <= d5 ? 0 : 1) != 0) {
             d3 = Math.max(d3, Math.abs(paramArrayOfDouble7[(paramInt1 + j - 1 + paramInt14)]) / paramArrayOfDouble7[(j - 1 + paramInt14)]);
@@ -161,7 +161,7 @@ public final class Dsyrfs
         {
           Dsytrs.dsytrs(paramString, paramInt1, 1, paramArrayOfDouble2, paramInt5, paramInt6, paramArrayOfInt1, paramInt7, paramArrayOfDouble7, paramInt1 + 1 - 1 + paramInt14, paramInt1, paramintW);
           j = 1;
-          for (i2 = paramInt1 - 1 + 1; i2 > 0; i2--)
+          for (int i2 = paramInt1 - 1 + 1; i2 > 0; i2--)
           {
             paramArrayOfDouble7[(paramInt1 + j - 1 + paramInt14)] = (paramArrayOfDouble7[(j - 1 + paramInt14)] * paramArrayOfDouble7[(paramInt1 + j - 1 + paramInt14)]);
             j += 1;
@@ -170,7 +170,7 @@ public final class Dsyrfs
         else if ((localintW.val != 2 ? 0 : 1) != 0)
         {
           j = 1;
-          for (i2 = paramInt1 - 1 + 1; i2 > 0; i2--)
+          for (int i2 = paramInt1 - 1 + 1; i2 > 0; i2--)
           {
             paramArrayOfDouble7[(paramInt1 + j - 1 + paramInt14)] = (paramArrayOfDouble7[(j - 1 + paramInt14)] * paramArrayOfDouble7[(paramInt1 + j - 1 + paramInt14)]);
             j += 1;
@@ -180,7 +180,7 @@ public final class Dsyrfs
       }
       d2 = 0.0D;
       j = 1;
-      for (i2 = paramInt1 - 1 + 1; i2 > 0; i2--)
+      for (int i2 = paramInt1 - 1 + 1; i2 > 0; i2--)
       {
         d2 = Math.max(d2, Math.abs(paramArrayOfDouble4[(j - 1 + (k - 1) * paramInt11 + paramInt10)]));
         j += 1;

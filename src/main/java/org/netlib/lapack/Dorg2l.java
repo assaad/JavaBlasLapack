@@ -56,7 +56,7 @@ public final class Dorg2l
       k += 1;
     }
     i = 1;
-    for (n = paramInt3 - 1 + 1; n > 0; n--)
+    for (int n = paramInt3 - 1 + 1; n > 0; n--)
     {
       j = paramInt2 - paramInt3 + i;
       paramArrayOfDouble1[(paramInt1 - paramInt2 + j - 1 + (j - 1) * paramInt5 + paramInt4)] = 1.0D;

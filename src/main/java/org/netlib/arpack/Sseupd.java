@@ -8,7 +8,6 @@ import org.netlib.lapack.Sgeqr2;
 import org.netlib.lapack.Slacpy;
 import org.netlib.lapack.Slamch;
 import org.netlib.lapack.Sorm2r;
-import org.netlib.lapack.Ssteqr;
 import org.netlib.util.floatW;
 import org.netlib.util.intW;
 

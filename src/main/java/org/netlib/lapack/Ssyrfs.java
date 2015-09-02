@@ -52,7 +52,7 @@ public final class Ssyrfs
     if (((paramInt2 != 0 ? 0 : 1) == 0 ? 0 : 1) != 0)
     {
       k = 1;
-      for (i1 = paramInt2 - 1 + 1; i1 > 0; i1--)
+      for (int i1 = paramInt2 - 1 + 1; i1 > 0; i1--)
       {
         paramArrayOfFloat5[(k - 1 + paramInt12)] = 0.0F;
         paramArrayOfFloat6[(k - 1 + paramInt13)] = 0.0F;
@@ -75,7 +75,7 @@ public final class Ssyrfs
         Scopy.scopy(paramInt1, paramArrayOfFloat3, 1 - 1 + (k - 1) * paramInt9 + paramInt8, 1, paramArrayOfFloat7, paramInt1 + 1 - 1 + paramInt14, 1);
         Ssymv.ssymv(paramString, paramInt1, -1.0F, paramArrayOfFloat1, paramInt3, paramInt4, paramArrayOfFloat4, 1 - 1 + (k - 1) * paramInt11 + paramInt10, 1, 1.0F, paramArrayOfFloat7, paramInt1 + 1 - 1 + paramInt14, 1);
         j = 1;
-        for (i2 = paramInt1 - 1 + 1; i2 > 0; i2--)
+        for (int i2 = paramInt1 - 1 + 1; i2 > 0; i2--)
         {
           paramArrayOfFloat7[(j - 1 + paramInt14)] = Math.abs(paramArrayOfFloat3[(j - 1 + (k - 1) * paramInt9 + paramInt8)]);
           j += 1;
@@ -84,7 +84,7 @@ public final class Ssyrfs
         if (bool)
         {
           m = 1;
-          for (i2 = paramInt1 - 1 + 1; i2 > 0; i2--)
+          for (int i2 = paramInt1 - 1 + 1; i2 > 0; i2--)
           {
             f3 = 0.0F;
             f7 = Math.abs(paramArrayOfFloat4[(m - 1 + (k - 1) * paramInt11 + paramInt10)]);
@@ -102,7 +102,7 @@ public final class Ssyrfs
         else
         {
           m = 1;
-          for (i2 = paramInt1 - 1 + 1; i2 > 0; i2--)
+          for (int i2 = paramInt1 - 1 + 1; i2 > 0; i2--)
           {
             f3 = 0.0F;
             f7 = Math.abs(paramArrayOfFloat4[(m - 1 + (k - 1) * paramInt11 + paramInt10)]);
@@ -120,7 +120,7 @@ public final class Ssyrfs
         }
         f3 = 0.0F;
         j = 1;
-        for (i2 = paramInt1 - 1 + 1; i2 > 0; i2--)
+        for (int i2 = paramInt1 - 1 + 1; i2 > 0; i2--)
         {
           if ((paramArrayOfFloat7[(j - 1 + paramInt14)] <= f5 ? 0 : 1) != 0) {
             f3 = Math.max(f3, Math.abs(paramArrayOfFloat7[(paramInt1 + j - 1 + paramInt14)]) / paramArrayOfFloat7[(j - 1 + paramInt14)]);
@@ -161,7 +161,7 @@ public final class Ssyrfs
         {
           Ssytrs.ssytrs(paramString, paramInt1, 1, paramArrayOfFloat2, paramInt5, paramInt6, paramArrayOfInt1, paramInt7, paramArrayOfFloat7, paramInt1 + 1 - 1 + paramInt14, paramInt1, paramintW);
           j = 1;
-          for (i2 = paramInt1 - 1 + 1; i2 > 0; i2--)
+          for (int i2 = paramInt1 - 1 + 1; i2 > 0; i2--)
           {
             paramArrayOfFloat7[(paramInt1 + j - 1 + paramInt14)] = (paramArrayOfFloat7[(j - 1 + paramInt14)] * paramArrayOfFloat7[(paramInt1 + j - 1 + paramInt14)]);
             j += 1;
@@ -170,7 +170,7 @@ public final class Ssyrfs
         else if ((localintW.val != 2 ? 0 : 1) != 0)
         {
           j = 1;
-          for (i2 = paramInt1 - 1 + 1; i2 > 0; i2--)
+          for (int i2 = paramInt1 - 1 + 1; i2 > 0; i2--)
           {
             paramArrayOfFloat7[(paramInt1 + j - 1 + paramInt14)] = (paramArrayOfFloat7[(j - 1 + paramInt14)] * paramArrayOfFloat7[(paramInt1 + j - 1 + paramInt14)]);
             j += 1;
@@ -180,7 +180,7 @@ public final class Ssyrfs
       }
       f2 = 0.0F;
       j = 1;
-      for (i2 = paramInt1 - 1 + 1; i2 > 0; i2--)
+      for (int i2 = paramInt1 - 1 + 1; i2 > 0; i2--)
       {
         f2 = Math.max(f2, Math.abs(paramArrayOfFloat4[(j - 1 + (k - 1) * paramInt11 + paramInt10)]));
         j += 1;

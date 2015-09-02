@@ -63,7 +63,7 @@ public final class Dlaqtr
     if ((paramBoolean2 ^ true))
     {
       i = 2;
-      for (i4 = paramInt1 - 2 + 1; i4 > 0; i4--)
+      for (int i4 = paramInt1 - 2 + 1; i4 > 0; i4--)
       {
         paramArrayOfDouble4[(i - 1 + paramInt6)] += Math.abs(paramArrayOfDouble2[(i - 1 + paramInt4)]);
         i += 1;
@@ -89,7 +89,7 @@ public final class Dlaqtr
       {
         n = paramInt1;
         j = paramInt1;
-        for (i4 = (1 - paramInt1 + -1) / -1; i4 > 0; i4--)
+        for (int i4 = (1 - paramInt1 + -1) / -1; i4 > 0; i4--)
         {
           if ((j <= n ? 0 : 1) == 0)
           {
@@ -185,7 +185,7 @@ public final class Dlaqtr
       {
         n = 1;
         j = 1;
-        for (i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
+        for (int i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
         {
           if ((j >= n ? 0 : 1) == 0)
           {
@@ -274,7 +274,7 @@ public final class Dlaqtr
       {
         n = paramInt1;
         j = paramInt1;
-        for (i4 = (1 - paramInt1 + -1) / -1; i4 > 0; i4--)
+        for (int i4 = (1 - paramInt1 + -1) / -1; i4 > 0; i4--)
         {
           if ((j <= n ? 0 : 1) == 0)
           {
@@ -398,7 +398,7 @@ public final class Dlaqtr
       {
         n = 1;
         j = 1;
-        for (i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
+        for (int i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
         {
           if ((j >= n ? 0 : 1) == 0)
           {

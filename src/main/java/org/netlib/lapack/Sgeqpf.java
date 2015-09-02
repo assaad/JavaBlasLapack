@@ -72,14 +72,14 @@ public final class Sgeqpf
     if ((j >= n ? 0 : 1) != 0)
     {
       i = j + 1;
-      for (i2 = paramInt2 - (j + 1) + 1; i2 > 0; i2--)
+      for (int i2 = paramInt2 - (j + 1) + 1; i2 > 0; i2--)
       {
         paramArrayOfFloat3[(i - 1 + paramInt7)] = Snrm2.snrm2(paramInt1 - j, paramArrayOfFloat1, j + 1 - 1 + (i - 1) * paramInt4 + paramInt3, 1);
         paramArrayOfFloat3[(paramInt2 + i - 1 + paramInt7)] = paramArrayOfFloat3[(i - 1 + paramInt7)];
         i += 1;
       }
       i = j + 1;
-      for (i2 = n - (j + 1) + 1; i2 > 0; i2--)
+      for (int i2 = n - (j + 1) + 1; i2 > 0; i2--)
       {
         i1 = i - 1 + Isamax.isamax(paramInt2 - i + 1, paramArrayOfFloat3, i - 1 + paramInt7, 1);
         if ((i1 == i ? 0 : 1) != 0)

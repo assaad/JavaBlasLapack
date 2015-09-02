@@ -62,7 +62,7 @@ public final class Dlatdf
       d5 = 0.0D;
       d4 = 0.0D;
       i = paramInt2;
-      for (m = (1 - paramInt2 + -1) / -1; m > 0; m--)
+      for (int m = (1 - paramInt2 + -1) / -1; m > 0; m--)
       {
         localdoubleW.val = (1.0D / paramArrayOfDouble1[(i - 1 + (i - 1) * paramInt4 + paramInt3)]);
         arrayOfDouble3[(i - 1)] *= localdoubleW.val;

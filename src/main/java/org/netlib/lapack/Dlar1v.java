@@ -62,7 +62,7 @@ public final class Dlar1v
     if (!bool1)
     {
       i = i3;
-      for (i5 = i4 - 1 - i3 + 1; i5 > 0; i5--)
+      for (int i5 = i4 - 1 - i3 + 1; i5 > 0; i5--)
       {
         d2 = paramArrayOfDouble1[(i - 1 + paramInt4)] + d4;
         paramArrayOfDouble6[(j + i - 1 + paramInt10)] = (paramArrayOfDouble3[(i - 1 + paramInt6)] / d2);
@@ -77,7 +77,7 @@ public final class Dlar1v
       i1 = 0;
       d4 = paramArrayOfDouble6[(m + paramInt2 - 1 - 1 + paramInt10)] - paramDouble1;
       i = paramInt2;
-      for (i5 = i3 - 1 - paramInt2 + 1; i5 > 0; i5--)
+      for (int i5 = i3 - 1 - paramInt2 + 1; i5 > 0; i5--)
       {
         d2 = paramArrayOfDouble1[(i - 1 + paramInt4)] + d4;
         if ((Math.abs(d2) >= paramDouble2 ? 0 : 1) != 0) {
@@ -95,7 +95,7 @@ public final class Dlar1v
         i += 1;
       }
       i = i3;
-      for (i5 = i4 - 1 - i3 + 1; i5 > 0; i5--)
+      for (int i5 = i4 - 1 - i3 + 1; i5 > 0; i5--)
       {
         d2 = paramArrayOfDouble1[(i - 1 + paramInt4)] + d4;
         if ((Math.abs(d2) >= paramDouble2 ? 0 : 1) != 0) {
@@ -114,7 +114,7 @@ public final class Dlar1v
     i2 = 0;
     paramArrayOfDouble6[(k + paramInt3 - 1 - 1 + paramInt10)] = (paramArrayOfDouble1[(paramInt3 - 1 + paramInt4)] - paramDouble1);
     i = paramInt3 - 1;
-    for (i5 = (i3 - (paramInt3 - 1) + -1) / -1; i5 > 0; i5--)
+    for (int i5 = (i3 - (paramInt3 - 1) + -1) / -1; i5 > 0; i5--)
     {
       d1 = paramArrayOfDouble4[(i - 1 + paramInt7)] + paramArrayOfDouble6[(k + i - 1 + paramInt10)];
       d5 = paramArrayOfDouble1[(i - 1 + paramInt4)] / d1;
@@ -131,7 +131,7 @@ public final class Dlar1v
     {
       i2 = 0;
       i = paramInt3 - 1;
-      for (i5 = (i3 - (paramInt3 - 1) + -1) / -1; i5 > 0; i5--)
+      for (int i5 = (i3 - (paramInt3 - 1) + -1) / -1; i5 > 0; i5--)
       {
         d1 = paramArrayOfDouble4[(i - 1 + paramInt7)] + paramArrayOfDouble6[(k + i - 1 + paramInt10)];
         if ((Math.abs(d1) >= paramDouble2 ? 0 : 1) != 0) {
@@ -163,7 +163,7 @@ public final class Dlar1v
     }
     paramintW2.val = i3;
     i = i3;
-    for (i5 = i4 - 1 - i3 + 1; i5 > 0; i5--)
+    for (int i5 = i4 - 1 - i3 + 1; i5 > 0; i5--)
     {
       d5 = paramArrayOfDouble6[(m + i - 1 + paramInt10)] + paramArrayOfDouble6[(k + i - 1 + paramInt10)];
       if ((d5 != 0.0D ? 0 : 1) != 0) {
@@ -183,7 +183,7 @@ public final class Dlar1v
     if ((((bool1 ^ true)) && ((bool2 ^ true)) ? 1 : 0) != 0)
     {
       i = paramintW2.val - 1;
-      for (i5 = (paramInt2 - (paramintW2.val - 1) + -1) / -1; i5 > 0; i5--)
+      for (int i5 = (paramInt2 - (paramintW2.val - 1) + -1) / -1; i5 > 0; i5--)
       {
         paramArrayOfDouble5[(i - 1 + paramInt8)] = (-(paramArrayOfDouble6[(j + i - 1 + paramInt10)] * paramArrayOfDouble5[(i + 1 - 1 + paramInt8)]));
         if (((Math.abs(paramArrayOfDouble5[(i - 1 + paramInt8)]) + Math.abs(paramArrayOfDouble5[(i + 1 - 1 + paramInt8)])) * Math.abs(paramArrayOfDouble3[(i - 1 + paramInt6)]) >= paramDouble3 ? 0 : 1) != 0)
@@ -199,7 +199,7 @@ public final class Dlar1v
     else
     {
       i = paramintW2.val - 1;
-      for (i5 = (paramInt2 - (paramintW2.val - 1) + -1) / -1; i5 > 0; i5--)
+      for (int i5 = (paramInt2 - (paramintW2.val - 1) + -1) / -1; i5 > 0; i5--)
       {
         if ((paramArrayOfDouble5[(i + 1 - 1 + paramInt8)] != 0.0D ? 0 : 1) != 0) {
           paramArrayOfDouble5[(i - 1 + paramInt8)] = (-(paramArrayOfDouble3[(i + 1 - 1 + paramInt6)] / paramArrayOfDouble3[(i - 1 + paramInt6)] * paramArrayOfDouble5[(i + 2 - 1 + paramInt8)]));
@@ -219,7 +219,7 @@ public final class Dlar1v
     if ((((bool1 ^ true)) && ((bool2 ^ true)) ? 1 : 0) != 0)
     {
       i = paramintW2.val;
-      for (i5 = paramInt3 - 1 - paramintW2.val + 1; i5 > 0; i5--)
+      for (int i5 = paramInt3 - 1 - paramintW2.val + 1; i5 > 0; i5--)
       {
         paramArrayOfDouble5[(i + 1 - 1 + paramInt8)] = (-(paramArrayOfDouble6[(n + i - 1 + paramInt10)] * paramArrayOfDouble5[(i - 1 + paramInt8)]));
         if (((Math.abs(paramArrayOfDouble5[(i - 1 + paramInt8)]) + Math.abs(paramArrayOfDouble5[(i + 1 - 1 + paramInt8)])) * Math.abs(paramArrayOfDouble3[(i - 1 + paramInt6)]) >= paramDouble3 ? 0 : 1) != 0)
@@ -235,7 +235,7 @@ public final class Dlar1v
     else
     {
       i = paramintW2.val;
-      for (i5 = paramInt3 - 1 - paramintW2.val + 1; i5 > 0; i5--)
+      for (int i5 = paramInt3 - 1 - paramintW2.val + 1; i5 > 0; i5--)
       {
         if ((paramArrayOfDouble5[(i - 1 + paramInt8)] != 0.0D ? 0 : 1) != 0) {
           paramArrayOfDouble5[(i + 1 - 1 + paramInt8)] = (-(paramArrayOfDouble3[(i - 1 - 1 + paramInt6)] / paramArrayOfDouble3[(i - 1 + paramInt6)] * paramArrayOfDouble5[(i - 1 - 1 + paramInt8)]));

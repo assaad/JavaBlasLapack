@@ -132,7 +132,7 @@ public final class Slaed6
         f13 = f14;
       }
       j = 1;
-      for (n = 3 - 1 + 1; n > 0; n--)
+      for (int n = 3 - 1 + 1; n > 0; n--)
       {
         arrayOfFloat1[(j - 1)] = (paramArrayOfFloat1[(j - 1 + paramInt2)] * f12);
         arrayOfFloat2[(j - 1)] = (paramArrayOfFloat2[(j - 1 + paramInt3)] * f12);
@@ -145,7 +145,7 @@ public final class Slaed6
     else
     {
       j = 1;
-      for (n = 3 - 1 + 1; n > 0; n--)
+      for (int n = 3 - 1 + 1; n > 0; n--)
       {
         arrayOfFloat1[(j - 1)] = paramArrayOfFloat1[(j - 1 + paramInt2)];
         arrayOfFloat2[(j - 1)] = paramArrayOfFloat2[(j - 1 + paramInt3)];
@@ -177,7 +177,7 @@ public final class Slaed6
       }
       k = m + 1;
       m = k;
-      for (n = 40 - k + 1; n > 0; n--)
+      for (int n = 40 - k + 1; n > 0; n--)
       {
         if (paramBoolean)
         {

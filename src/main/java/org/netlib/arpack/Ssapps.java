@@ -63,7 +63,7 @@ public final class Ssapps
         do
         {
           localintW1.val = j;
-          for (i3 = n - 1 - j + 1; i3 > 0; i3--)
+          for (int i3 = n - 1 - j + 1; i3 > 0; i3--)
           {
             f5 = Math.abs(paramArrayOfFloat3[(localintW1.val - 1 + (2 - 1) * paramInt8 + paramInt7)]) + Math.abs(paramArrayOfFloat3[(localintW1.val + 1 - 1 + (2 - 1) * paramInt8 + paramInt7)]);
             if ((paramArrayOfFloat3[(localintW1.val + 1 - 1 + (1 - 1) * paramInt8 + paramInt7)] > epsmch * f5 ? 0 : 1) != 0)
@@ -94,7 +94,7 @@ public final class Ssapps
             paramArrayOfFloat3[(j + 1 - 1 + (2 - 1) * paramInt8 + paramInt7)] = (localfloatW1.val * f4 - localfloatW3.val * f3);
             paramArrayOfFloat3[(j + 1 - 1 + (1 - 1) * paramInt8 + paramInt7)] = (localfloatW1.val * f3 + localfloatW3.val * f4);
             m = 1;
-            for (i3 = Math.min(j + localintW2.val, n) - 1 + 1; i3 > 0; i3--)
+            for (int i3 = Math.min(j + localintW2.val, n) - 1 + 1; i3 > 0; i3--)
             {
               f1 = localfloatW1.val * paramArrayOfFloat5[(m - 1 + (j - 1) * paramInt11 + paramInt10)] + localfloatW3.val * paramArrayOfFloat5[(m - 1 + (j + 1 - 1) * paramInt11 + paramInt10)];
               paramArrayOfFloat5[(m - 1 + (j + 1 - 1) * paramInt11 + paramInt10)] = (-(localfloatW3.val * paramArrayOfFloat5[(m - 1 + (j - 1) * paramInt11 + paramInt10)]) + localfloatW1.val * paramArrayOfFloat5[(m - 1 + (j + 1 - 1) * paramInt11 + paramInt10)]);
@@ -102,7 +102,7 @@ public final class Ssapps
               m += 1;
             }
             localintW1.val = (j + 1);
-            for (i3 = i - 1 - (j + 1) + 1; i3 > 0; i3--)
+            for (int i3 = i - 1 - (j + 1) + 1; i3 > 0; i3--)
             {
               f6 = paramArrayOfFloat3[(localintW1.val - 1 + (1 - 1) * paramInt8 + paramInt7)];
               f7 = localfloatW3.val * paramArrayOfFloat3[(localintW1.val + 1 - 1 + (1 - 1) * paramInt8 + paramInt7)];
@@ -152,7 +152,7 @@ public final class Ssapps
         localintW2.val += 1;
       }
       localintW1.val = k;
-      for (i2 = n - 1 - k + 1; i2 > 0; i2--)
+      for (int i2 = n - 1 - k + 1; i2 > 0; i2--)
       {
         f5 = Math.abs(paramArrayOfFloat3[(localintW1.val - 1 + (2 - 1) * paramInt8 + paramInt7)]) + Math.abs(paramArrayOfFloat3[(localintW1.val + 1 - 1 + (2 - 1) * paramInt8 + paramInt7)]);
         if ((paramArrayOfFloat3[(localintW1.val + 1 - 1 + (1 - 1) * paramInt8 + paramInt7)] > epsmch * f5 ? 0 : 1) != 0)
@@ -170,7 +170,7 @@ public final class Ssapps
         Sgemv.sgemv("N", paramInt1, n, 1.0F, paramArrayOfFloat2, paramInt5, paramInt6, paramArrayOfFloat5, 1 - 1 + (paramInt2 + 1 - 1) * paramInt11 + paramInt10, 1, 0.0F, paramArrayOfFloat6, paramInt1 + 1 - 1 + paramInt12, 1);
       }
       localintW1.val = 1;
-      for (i2 = paramInt2 - 1 + 1; i2 > 0; i2--)
+      for (int i2 = paramInt2 - 1 + 1; i2 > 0; i2--)
       {
         Sgemv.sgemv("N", paramInt1, n - localintW1.val + 1, 1.0F, paramArrayOfFloat2, paramInt5, paramInt6, paramArrayOfFloat5, 1 - 1 + (paramInt2 - localintW1.val + 1 - 1) * paramInt11 + paramInt10, 1, 0.0F, paramArrayOfFloat6, paramInt12, 1);
         Scopy.scopy(paramInt1, paramArrayOfFloat6, paramInt12, 1, paramArrayOfFloat2, 1 - 1 + (n - localintW1.val + 1 - 1) * paramInt6 + paramInt5, 1);

@@ -22,7 +22,7 @@ public final class Ivout
       i += 1;
     }
     i = n + 1;
-    for (i1 = 80 - (n + 1) + 1; i1 > 0; i1--)
+    for (int i1 = 80 - (n + 1) + 1; i1 > 0; i1--)
     {
       str = Util.stringInsert(str, " ", i, i);
       i += 1;
@@ -45,7 +45,7 @@ public final class Ivout
       if ((j > 4 ? 0 : 1) != 0)
       {
         k = 1;
-        for (i1 = (paramInt2 - 1 + 10) / 10; i1 > 0; i1--)
+        for (int i1 = (paramInt2 - 1 + 10) / 10; i1 > 0; i1--)
         {
           m = Math.min(paramInt2, k + 9);
           localVector.clear();
@@ -64,7 +64,7 @@ public final class Ivout
       else if ((j > 6 ? 0 : 1) != 0)
       {
         k = 1;
-        for (i1 = (paramInt2 - 1 + 7) / 7; i1 > 0; i1--)
+        for (int i1 = (paramInt2 - 1 + 7) / 7; i1 > 0; i1--)
         {
           m = Math.min(paramInt2, k + 6);
           localVector.clear();
@@ -83,7 +83,7 @@ public final class Ivout
       else if ((j > 10 ? 0 : 1) != 0)
       {
         k = 1;
-        for (i1 = (paramInt2 - 1 + 5) / 5; i1 > 0; i1--)
+        for (int i1 = (paramInt2 - 1 + 5) / 5; i1 > 0; i1--)
         {
           m = Math.min(paramInt2, k + 4);
           localVector.clear();
@@ -102,7 +102,7 @@ public final class Ivout
       else
       {
         k = 1;
-        for (i1 = (paramInt2 - 1 + 3) / 3; i1 > 0; i1--)
+        for (int i1 = (paramInt2 - 1 + 3) / 3; i1 > 0; i1--)
         {
           m = Math.min(paramInt2, k + 2);
           localVector.clear();
@@ -122,7 +122,7 @@ public final class Ivout
     else if ((j > 4 ? 0 : 1) != 0)
     {
       k = 1;
-      for (i1 = (paramInt2 - 1 + 20) / 20; i1 > 0; i1--)
+      for (int i1 = (paramInt2 - 1 + 20) / 20; i1 > 0; i1--)
       {
         m = Math.min(paramInt2, k + 19);
         localVector.clear();
@@ -141,7 +141,7 @@ public final class Ivout
     else if ((j > 6 ? 0 : 1) != 0)
     {
       k = 1;
-      for (i1 = (paramInt2 - 1 + 15) / 15; i1 > 0; i1--)
+      for (int i1 = (paramInt2 - 1 + 15) / 15; i1 > 0; i1--)
       {
         m = Math.min(paramInt2, k + 14);
         localVector.clear();
@@ -160,7 +160,7 @@ public final class Ivout
     else if ((j > 10 ? 0 : 1) != 0)
     {
       k = 1;
-      for (i1 = (paramInt2 - 1 + 10) / 10; i1 > 0; i1--)
+      for (int i1 = (paramInt2 - 1 + 10) / 10; i1 > 0; i1--)
       {
         m = Math.min(paramInt2, k + 9);
         localVector.clear();
@@ -179,7 +179,7 @@ public final class Ivout
     else
     {
       k = 1;
-      for (i1 = (paramInt2 - 1 + 7) / 7; i1 > 0; i1--)
+      for (int i1 = (paramInt2 - 1 + 7) / 7; i1 > 0; i1--)
       {
         m = Math.min(paramInt2, k + 6);
         localVector.clear();

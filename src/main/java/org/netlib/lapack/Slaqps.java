@@ -77,7 +77,7 @@ public final class Slaqps
       if ((i2 >= m ? 0 : 1) != 0)
       {
         j = k + 1;
-        for (i3 = paramInt2 - (k + 1) + 1; i3 > 0; i3--)
+        for (int i3 = paramInt2 - (k + 1) + 1; i3 > 0; i3--)
         {
           if ((paramArrayOfFloat3[(j - 1 + paramInt9)] == 0.0F ? 0 : 1) != 0)
           {

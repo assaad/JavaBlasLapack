@@ -53,7 +53,7 @@ public final class Dlasq1
       return;
     }
     i = 1;
-    for (j = paramInt1 - 1 + 1; j > 0; j--)
+    for (int j = paramInt1 - 1 + 1; j > 0; j--)
     {
       localdoubleW2.val = Math.max(localdoubleW2.val, paramArrayOfDouble1[(i - 1 + paramInt2)]);
       i += 1;
@@ -65,7 +65,7 @@ public final class Dlasq1
     Dcopy.dcopy(paramInt1 - 1, paramArrayOfDouble2, paramInt3, 1, paramArrayOfDouble3, 2 - 1 + paramInt4, 2);
     Dlascl.dlascl("G", 0, 0, localdoubleW2.val, d2, 2 * paramInt1 - 1, 1, paramArrayOfDouble3, paramInt4, 2 * paramInt1 - 1, localintW);
     i = 1;
-    for (j = 2 * paramInt1 - 1 - 1 + 1; j > 0; j--)
+    for (int j = 2 * paramInt1 - 1 - 1 + 1; j > 0; j--)
     {
       paramArrayOfDouble3[(i - 1 + paramInt4)] = Math.pow(paramArrayOfDouble3[(i - 1 + paramInt4)], 2);
       i += 1;
@@ -75,7 +75,7 @@ public final class Dlasq1
     if ((paramintW.val != 0 ? 0 : 1) != 0)
     {
       i = 1;
-      for (j = paramInt1 - 1 + 1; j > 0; j--)
+      for (int j = paramInt1 - 1 + 1; j > 0; j--)
       {
         paramArrayOfDouble1[(i - 1 + paramInt2)] = Math.sqrt(paramArrayOfDouble3[(i - 1 + paramInt4)]);
         i += 1;

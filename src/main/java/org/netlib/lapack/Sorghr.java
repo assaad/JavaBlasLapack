@@ -92,7 +92,7 @@ public final class Sorghr
       k += -1;
     }
     k = 1;
-    for (i2 = paramInt2 - 1 + 1; i2 > 0; i2--)
+    for (int i2 = paramInt2 - 1 + 1; i2 > 0; i2--)
     {
       j = 1;
       for (i3 = paramInt1 - 1 + 1; i3 > 0; i3--)
@@ -104,7 +104,7 @@ public final class Sorghr
       k += 1;
     }
     k = paramInt3 + 1;
-    for (i2 = paramInt1 - (paramInt3 + 1) + 1; i2 > 0; i2--)
+    for (int i2 = paramInt1 - (paramInt3 + 1) + 1; i2 > 0; i2--)
     {
       j = 1;
       for (i3 = paramInt1 - 1 + 1; i3 > 0; i3--)

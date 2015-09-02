@@ -41,7 +41,7 @@ public final class Spoequ
     if ((f > 0.0F ? 0 : 1) != 0)
     {
       i = 1;
-      for (j = paramInt1 - 1 + 1; j > 0; j--)
+      for (int j = paramInt1 - 1 + 1; j > 0; j--)
       {
         if ((paramArrayOfFloat2[(i - 1 + paramInt4)] > 0.0F ? 0 : 1) != 0)
         {
@@ -54,7 +54,7 @@ public final class Spoequ
     else
     {
       i = 1;
-      for (j = paramInt1 - 1 + 1; j > 0; j--)
+      for (int j = paramInt1 - 1 + 1; j > 0; j--)
       {
         paramArrayOfFloat2[(i - 1 + paramInt4)] = (1.0F / (float)Math.sqrt(paramArrayOfFloat2[(i - 1 + paramInt4)]));
         i += 1;

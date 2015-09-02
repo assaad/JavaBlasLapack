@@ -175,7 +175,7 @@ public final class Sstebz
       f3 = paramArrayOfFloat1[(1 - 1 + paramInt4)];
       f8 = 0.0F;
       i12 = 1;
-      for (i19 = paramInt1 - 1 - 1 + 1; i19 > 0; i19--)
+      for (int i19 = paramInt1 - 1 - 1 + 1; i19 > 0; i19--)
       {
         f9 = (float)Math.sqrt(paramArrayOfFloat4[(i12 - 1 + paramInt9)]);
         f4 = Math.max(f4, paramArrayOfFloat1[(i12 - 1 + paramInt4)] + f8 + f9);
@@ -238,7 +238,7 @@ public final class Sstebz
     {
       f10 = Math.max(Math.abs(paramArrayOfFloat1[(1 - 1 + paramInt4)]) + Math.abs(paramArrayOfFloat2[(1 - 1 + paramInt5)]), Math.abs(paramArrayOfFloat1[(paramInt1 - 1 + paramInt4)]) + Math.abs(paramArrayOfFloat2[(paramInt1 - 1 - 1 + paramInt5)]));
       i12 = 2;
-      for (i19 = paramInt1 - 1 - 2 + 1; i19 > 0; i19--)
+      for (int i19 = paramInt1 - 1 - 2 + 1; i19 > 0; i19--)
       {
         f10 = Math.max(f10, Math.abs(paramArrayOfFloat1[(i12 - 1 + paramInt4)]) + Math.abs(paramArrayOfFloat2[(i12 - 1 - 1 + paramInt5)]) + Math.abs(paramArrayOfFloat2[(i12 - 1 + paramInt5)]));
         i12 += 1;
@@ -266,7 +266,7 @@ public final class Sstebz
     i18 = 0;
     i13 = 1;
     int i20;
-    for (i19 = paramintW2.val - 1 + 1; i19 > 0; i19--)
+    for (int i19 = paramintW2.val - 1 + 1; i19 > 0; i19--)
     {
       i5 = i3;
       m = i5 + 1;
@@ -376,7 +376,7 @@ public final class Sstebz
       if (((i1 <= 0 ? 0 : 1) == 0 ? 0 : 1) != 0)
       {
         i15 = 1;
-        for (i19 = paramintW1.val - 1 + 1; i19 > 0; i19--)
+        for (int i19 = paramintW1.val - 1 + 1; i19 > 0; i19--)
         {
           if ((paramArrayOfFloat3[(i15 - 1 + paramInt6)] > f14 ? 0 : 1) != 0) {}
           if (((n <= 0 ? 0 : 1) != 0 ? 1 : 0) != 0)
@@ -408,7 +408,7 @@ public final class Sstebz
         {
           f12 = f15;
           i14 = 1;
-          for (i19 = n - 1 + 1; i19 > 0; i19--)
+          for (int i19 = n - 1 + 1; i19 > 0; i19--)
           {
             i10 = 0;
             i15 = 1;
@@ -432,7 +432,7 @@ public final class Sstebz
         {
           f12 = f13;
           i14 = 1;
-          for (i19 = i1 - 1 + 1; i19 > 0; i19--)
+          for (int i19 = i1 - 1 + 1; i19 > 0; i19--)
           {
             i10 = 0;
             i15 = 1;
@@ -454,7 +454,7 @@ public final class Sstebz
         }
         localintW2.val = 0;
         i15 = 1;
-        for (i19 = paramintW1.val - 1 + 1; i19 > 0; i19--)
+        for (int i19 = paramintW1.val - 1 + 1; i19 > 0; i19--)
         {
           if ((paramArrayOfInt1[(i15 - 1 + paramInt7)] == 0 ? 0 : 1) != 0)
           {
@@ -475,7 +475,7 @@ public final class Sstebz
     if (((paramintW2.val <= 1 ? 0 : 1) != 0 ? 1 : 0) != 0)
     {
       i15 = 1;
-      for (i19 = paramintW1.val - 1 - 1 + 1; i19 > 0; i19--)
+      for (int i19 = paramintW1.val - 1 - 1 + 1; i19 > 0; i19--)
       {
         i2 = 0;
         f8 = paramArrayOfFloat3[(i15 - 1 + paramInt6)];

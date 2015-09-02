@@ -250,21 +250,21 @@ public final class Stgsyl
                 i6 += 1;
               }
               i6 = i5;
-              for (i15 = i4 - i5 + 1; i15 > 0; i15--)
+              for (int i15 = i4 - i5 + 1; i15 > 0; i15--)
               {
                 Sscal.sscal(i1 - 1, localfloatW3.val, paramArrayOfFloat3, 1 - 1 + (i6 - 1) * paramInt9 + paramInt8, 1);
                 Sscal.sscal(i1 - 1, localfloatW3.val, paramArrayOfFloat6, 1 - 1 + (i6 - 1) * paramInt15 + paramInt14, 1);
                 i6 += 1;
               }
               i6 = i5;
-              for (i15 = i4 - i5 + 1; i15 > 0; i15--)
+              for (int i15 = i4 - i5 + 1; i15 > 0; i15--)
               {
                 Sscal.sscal(paramInt2 - k, localfloatW3.val, paramArrayOfFloat3, k + 1 - 1 + (i6 - 1) * paramInt9 + paramInt8, 1);
                 Sscal.sscal(paramInt2 - k, localfloatW3.val, paramArrayOfFloat6, k + 1 - 1 + (i6 - 1) * paramInt15 + paramInt14, 1);
                 i6 += 1;
               }
               i6 = i4 + 1;
-              for (i15 = paramInt3 - (i4 + 1) + 1; i15 > 0; i15--)
+              for (int i15 = paramInt3 - (i4 + 1) + 1; i15 > 0; i15--)
               {
                 Sscal.sscal(paramInt2, localfloatW3.val, paramArrayOfFloat3, 1 - 1 + (i6 - 1) * paramInt9 + paramInt8, 1);
                 Sscal.sscal(paramInt2, localfloatW3.val, paramArrayOfFloat6, 1 - 1 + (i6 - 1) * paramInt15 + paramInt14, 1);

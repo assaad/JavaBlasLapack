@@ -62,7 +62,7 @@ public final class Slaneg
     }
     f5 = paramArrayOfFloat1[(paramInt1 - 1 + paramInt2)] - paramFloat1;
     i = paramInt1 - 1;
-    for (i2 = (paramInt4 - (paramInt1 - 1) + -128) / -128; i2 > 0; i2--)
+    for (int i2 = (paramInt4 - (paramInt1 - 1) + -128) / -128; i2 > 0; i2--)
     {
       m = 0;
       f1 = f5;

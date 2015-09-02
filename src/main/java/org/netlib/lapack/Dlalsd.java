@@ -98,7 +98,7 @@ public final class Dlalsd
     if (paramString.regionMatches(0, "L", 0, 1))
     {
       i4 = 1;
-      for (i26 = paramInt2 - 1 - 1 + 1; i26 > 0; i26--)
+      for (int i26 = paramInt2 - 1 - 1 + 1; i26 > 0; i26--)
       {
         Dlartg.dlartg(paramArrayOfDouble1[(i4 - 1 + paramInt4)], paramArrayOfDouble2[(i4 - 1 + paramInt5)], localdoubleW1, localdoubleW3, localdoubleW2);
         paramArrayOfDouble1[(i4 - 1 + paramInt4)] = localdoubleW2.val;
@@ -118,7 +118,7 @@ public final class Dlalsd
       if ((paramInt3 <= 1 ? 0 : 1) != 0)
       {
         i4 = 1;
-        for (i26 = paramInt3 - 1 + 1; i26 > 0; i26--)
+        for (int i26 = paramInt3 - 1 + 1; i26 > 0; i26--)
         {
           i8 = 1;
           for (int i27 = paramInt2 - 1 - 1 + 1; i27 > 0; i27--)
@@ -151,7 +151,7 @@ public final class Dlalsd
       }
       d4 = d3 * Math.abs(paramArrayOfDouble1[(org.netlib.blas.Idamax.idamax(paramInt2, paramArrayOfDouble1, paramInt4, 1) - 1 + paramInt4)]);
       i4 = 1;
-      for (i26 = paramInt2 - 1 + 1; i26 > 0; i26--)
+      for (int i26 = paramInt2 - 1 + 1; i26 > 0; i26--)
       {
         if ((paramArrayOfDouble1[(i4 - 1 + paramInt4)] > d4 ? 0 : 1) != 0)
         {
@@ -204,7 +204,7 @@ public final class Dlalsd
       i4 += 1;
     }
     i4 = 1;
-    for (i26 = i11 - 1 + 1; i26 > 0; i26--)
+    for (int i26 = i11 - 1 + 1; i26 > 0; i26--)
     {
       if ((Math.abs(paramArrayOfDouble2[(i4 - 1 + paramInt5)]) >= d1 ? 0 : 1) == 0) {}
       if (((i4 != i11 ? 0 : 1) == 0 ? 0 : 1) != 0)
@@ -262,7 +262,7 @@ public final class Dlalsd
     }
     d4 = d3 * Math.abs(paramArrayOfDouble1[(org.netlib.blas.Idamax.idamax(paramInt2, paramArrayOfDouble1, paramInt4, 1) - 1 + paramInt4)]);
     i4 = 1;
-    for (i26 = paramInt2 - 1 + 1; i26 > 0; i26--)
+    for (int i26 = paramInt2 - 1 + 1; i26 > 0; i26--)
     {
       if ((Math.abs(paramArrayOfDouble1[(i4 - 1 + paramInt4)]) > d4 ? 0 : 1) != 0)
       {
@@ -278,7 +278,7 @@ public final class Dlalsd
     }
     i6 = 1;
     i4 = 1;
-    for (i26 = i13 - 1 + 1; i26 > 0; i26--)
+    for (int i26 = i13 - 1 + 1; i26 > 0; i26--)
     {
       i21 = paramArrayOfInt[(i4 - 1 + paramInt9)];
       i22 = i21 - 1;

@@ -25,7 +25,7 @@ public final class Sdsdot
           k = 1 + (1 - paramInt1) * paramInt5;
         }
         i = 1;
-        for (n = paramInt1 - 1 + 1; n > 0; n--)
+        for (int n = paramInt1 - 1 + 1; n > 0; n--)
         {
           d += paramArrayOfFloat1[(j - 1 + paramInt2)] * paramArrayOfFloat2[(k - 1 + paramInt4)];
           j += paramInt3;

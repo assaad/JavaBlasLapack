@@ -51,7 +51,7 @@ public final class Sgbequ
     k = paramInt4 + 1;
     j = 1;
     int n;
-    for (m = paramInt2 - 1 + 1; m > 0; m--)
+    for (int m = paramInt2 - 1 + 1; m > 0; m--)
     {
       i = Math.max(j - paramInt4, 1);
       for (n = Math.min(j + paramInt3, paramInt1) - Math.max(j - paramInt4, 1) + 1; n > 0; n--)
@@ -64,7 +64,7 @@ public final class Sgbequ
     f3 = f1;
     f2 = 0.0F;
     i = 1;
-    for (m = paramInt1 - 1 + 1; m > 0; m--)
+    for (int m = paramInt1 - 1 + 1; m > 0; m--)
     {
       f2 = Math.max(f2, paramArrayOfFloat2[(i - 1 + paramInt7)]);
       f3 = Math.min(f3, paramArrayOfFloat2[(i - 1 + paramInt7)]);
@@ -74,7 +74,7 @@ public final class Sgbequ
     if ((f3 != 0.0F ? 0 : 1) != 0)
     {
       i = 1;
-      for (m = paramInt1 - 1 + 1; m > 0; m--)
+      for (int m = paramInt1 - 1 + 1; m > 0; m--)
       {
         if ((paramArrayOfFloat2[(i - 1 + paramInt7)] != 0.0F ? 0 : 1) != 0)
         {
@@ -87,7 +87,7 @@ public final class Sgbequ
     else
     {
       i = 1;
-      for (m = paramInt1 - 1 + 1; m > 0; m--)
+      for (int m = paramInt1 - 1 + 1; m > 0; m--)
       {
         paramArrayOfFloat2[(i - 1 + paramInt7)] = (1.0F / Math.min(Math.max(paramArrayOfFloat2[(i - 1 + paramInt7)], f4), f1));
         i += 1;
@@ -95,14 +95,14 @@ public final class Sgbequ
       paramfloatW1.val = (Math.max(f3, f4) / Math.min(f2, f1));
     }
     j = 1;
-    for (m = paramInt2 - 1 + 1; m > 0; m--)
+    for (int m = paramInt2 - 1 + 1; m > 0; m--)
     {
       paramArrayOfFloat3[(j - 1 + paramInt8)] = 0.0F;
       j += 1;
     }
     k = paramInt4 + 1;
     j = 1;
-    for (m = paramInt2 - 1 + 1; m > 0; m--)
+    for (int m = paramInt2 - 1 + 1; m > 0; m--)
     {
       i = Math.max(j - paramInt4, 1);
       for (n = Math.min(j + paramInt3, paramInt1) - Math.max(j - paramInt4, 1) + 1; n > 0; n--)
@@ -115,7 +115,7 @@ public final class Sgbequ
     f3 = f1;
     f2 = 0.0F;
     j = 1;
-    for (m = paramInt2 - 1 + 1; m > 0; m--)
+    for (int m = paramInt2 - 1 + 1; m > 0; m--)
     {
       f3 = Math.min(f3, paramArrayOfFloat3[(j - 1 + paramInt8)]);
       f2 = Math.max(f2, paramArrayOfFloat3[(j - 1 + paramInt8)]);
@@ -124,7 +124,7 @@ public final class Sgbequ
     if ((f3 != 0.0F ? 0 : 1) != 0)
     {
       j = 1;
-      for (m = paramInt2 - 1 + 1; m > 0; m--)
+      for (int m = paramInt2 - 1 + 1; m > 0; m--)
       {
         if ((paramArrayOfFloat3[(j - 1 + paramInt8)] != 0.0F ? 0 : 1) != 0)
         {
@@ -137,7 +137,7 @@ public final class Sgbequ
     else
     {
       j = 1;
-      for (m = paramInt2 - 1 + 1; m > 0; m--)
+      for (int m = paramInt2 - 1 + 1; m > 0; m--)
       {
         paramArrayOfFloat3[(j - 1 + paramInt8)] = (1.0F / Math.min(Math.max(paramArrayOfFloat3[(j - 1 + paramInt8)], f4), f1));
         j += 1;

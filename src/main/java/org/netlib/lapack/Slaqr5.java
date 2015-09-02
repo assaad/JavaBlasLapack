@@ -94,7 +94,7 @@ public final class Slaqr5
     i21 = i23 / 2;
     i10 = 6 * i21 - 3;
     m = 3 * (1 - i21) + paramInt3 - 1;
-    for (i28 = (paramInt4 - 2 - (3 * (1 - i21) + paramInt3 - 1) + (3 * i21 - 2)) / (3 * i21 - 2); i28 > 0; i28--)
+    for (int i28 = (paramInt4 - 2 - (3 * (1 - i21) + paramInt3 - 1) + (3 * i21 - 2)) / (3 * i21 - 2); i28 > 0; i28--)
     {
       i22 = m + i10;
       if (i25 != 0) {
@@ -205,7 +205,7 @@ public final class Slaqr5
         }
         n = Math.max(paramInt3, i13);
         int i31;
-        for (i30 = i3 - Math.max(paramInt3, i13) + 1; i30 > 0; i30--)
+        for (int i30 = i3 - Math.max(paramInt3, i13) + 1; i30 > 0; i30--)
         {
           i18 = Math.min(i17, (n - i13 + 2) / 3);
           i15 = i20;
@@ -224,7 +224,7 @@ public final class Slaqr5
         {
           i8 = i13 + 3 * (i16 - 1);
           n = Math.max(i8 + 1, paramInt3);
-          for (i30 = i3 - Math.max(i8 + 1, paramInt3) + 1; i30 > 0; i30--)
+          for (int i30 = i3 - Math.max(i8 + 1, paramInt3) + 1; i30 > 0; i30--)
           {
             f5 = paramArrayOfFloat5[(1 - 1 + (i16 - 1) * paramInt15 + paramInt14)] * (paramArrayOfFloat3[(i8 + 1 - 1 + (n - 1) * paramInt9 + paramInt8)] + paramArrayOfFloat5[(2 - 1 + (i16 - 1) * paramInt15 + paramInt14)] * paramArrayOfFloat3[(i8 + 2 - 1 + (n - 1) * paramInt9 + paramInt8)]);
             paramArrayOfFloat3[(i8 + 1 - 1 + (n - 1) * paramInt9 + paramInt8)] -= f5;
@@ -240,7 +240,7 @@ public final class Slaqr5
           i7 = paramInt3;
         }
         i15 = i20;
-        for (i30 = i17 - i20 + 1; i30 > 0; i30--)
+        for (int i30 = i17 - i20 + 1; i30 > 0; i30--)
         {
           if ((paramArrayOfFloat5[(1 - 1 + (i15 - 1) * paramInt15 + paramInt14)] == 0.0F ? 0 : 1) != 0)
           {
@@ -292,7 +292,7 @@ public final class Slaqr5
         if (((paramArrayOfFloat5[(1 - 1 + (i16 - 1) * paramInt15 + paramInt14)] == 0.0F ? 0 : 1) != 0 ? 1 : 0) != 0)
         {
           n = i7;
-          for (i30 = Math.min(paramInt4, i8 + 3) - i7 + 1; i30 > 0; i30--)
+          for (int i30 = Math.min(paramInt4, i8 + 3) - i7 + 1; i30 > 0; i30--)
           {
             f5 = paramArrayOfFloat5[(1 - 1 + (i16 - 1) * paramInt15 + paramInt14)] * (paramArrayOfFloat3[(n - 1 + (i8 + 1 - 1) * paramInt9 + paramInt8)] + paramArrayOfFloat5[(2 - 1 + (i16 - 1) * paramInt15 + paramInt14)] * paramArrayOfFloat3[(n - 1 + (i8 + 2 - 1) * paramInt9 + paramInt8)]);
             paramArrayOfFloat3[(n - 1 + (i8 + 1 - 1) * paramInt9 + paramInt8)] -= f5;
@@ -303,7 +303,7 @@ public final class Slaqr5
           {
             i11 = i8 - m;
             n = Math.max(1, paramInt3 - m);
-            for (i30 = i10 - Math.max(1, paramInt3 - m) + 1; i30 > 0; i30--)
+            for (int i30 = i10 - Math.max(1, paramInt3 - m) + 1; i30 > 0; i30--)
             {
               f5 = paramArrayOfFloat5[(1 - 1 + (i16 - 1) * paramInt15 + paramInt14)] * (paramArrayOfFloat6[(n - 1 + (i11 + 1 - 1) * paramInt17 + paramInt16)] + paramArrayOfFloat5[(2 - 1 + (i16 - 1) * paramInt15 + paramInt14)] * paramArrayOfFloat6[(n - 1 + (i11 + 2 - 1) * paramInt17 + paramInt16)]);
               paramArrayOfFloat6[(n - 1 + (i11 + 1 - 1) * paramInt17 + paramInt16)] -= f5;
@@ -314,7 +314,7 @@ public final class Slaqr5
           else if (paramBoolean2)
           {
             n = paramInt10;
-            i30 = paramInt11 - paramInt10 + 1;
+            int i30 = paramInt11 - paramInt10 + 1;
             for (;;)
             {
               f5 = paramArrayOfFloat5[(1 - 1 + (i16 - 1) * paramInt15 + paramInt14)] * (paramArrayOfFloat4[(n - 1 + (i8 + 1 - 1) * paramInt13 + paramInt12)] + paramArrayOfFloat5[(2 - 1 + (i16 - 1) * paramInt15 + paramInt14)] * paramArrayOfFloat4[(n - 1 + (i8 + 2 - 1) * paramInt13 + paramInt12)]);
@@ -340,7 +340,7 @@ public final class Slaqr5
           i18 += 1;
         }
         i15 = i19;
-        for (i30 = i18 - i19 + 1; i30 > 0; i30--)
+        for (int i30 = i18 - i19 + 1; i30 > 0; i30--)
         {
           i8 = Math.min(paramInt4 - 1, i13 + 3 * (i15 - 1));
           if ((paramArrayOfFloat3[(i8 + 1 - 1 + (i8 - 1) * paramInt9 + paramInt8)] == 0.0F ? 0 : 1) != 0)
@@ -385,7 +385,7 @@ public final class Slaqr5
         }
         i18 = Math.min(i21, (paramInt4 - i13 - 1) / 3);
         i15 = i20;
-        for (i30 = i18 - i20 + 1; i30 > 0; i30--)
+        for (int i30 = i18 - i20 + 1; i30 > 0; i30--)
         {
           i8 = i13 + 3 * (i15 - 1);
           f5 = paramArrayOfFloat5[(1 - 1 + (i15 - 1) * paramInt15 + paramInt14)] * paramArrayOfFloat5[(3 - 1 + (i15 - 1) * paramInt15 + paramInt14)] * paramArrayOfFloat3[(i8 + 4 - 1 + (i8 + 3 - 1) * paramInt9 + paramInt8)];
@@ -416,7 +416,7 @@ public final class Slaqr5
           i9 = Math.max(1, paramInt3 - m);
           i24 = i10 - Math.max(0, i22 - paramInt4) - i9 + 1;
           i4 = Math.min(i22, paramInt4) + 1;
-          for (i29 = (i3 - (Math.min(i22, paramInt4) + 1) + paramInt21) / paramInt21; i29 > 0; i29--)
+          for (int i29 = (i3 - (Math.min(i22, paramInt4) + 1) + paramInt21) / paramInt21; i29 > 0; i29--)
           {
             i5 = Math.min(paramInt21, i3 - i4 + 1);
             Sgemm.sgemm("C", "N", i24, i5, i24, 1.0F, paramArrayOfFloat6, i9 - 1 + (i9 - 1) * paramInt17 + paramInt16, paramInt17, paramArrayOfFloat3, m + i9 - 1 + (i4 - 1) * paramInt9 + paramInt8, paramInt9, 0.0F, paramArrayOfFloat8, paramInt22, paramInt23);
@@ -424,7 +424,7 @@ public final class Slaqr5
             i4 += paramInt21;
           }
           i6 = i7;
-          for (i29 = (Math.max(paramInt3, m) - 1 - i7 + paramInt18) / paramInt18; i29 > 0; i29--)
+          for (int i29 = (Math.max(paramInt3, m) - 1 - i7 + paramInt18) / paramInt18; i29 > 0; i29--)
           {
             i5 = Math.min(paramInt18, Math.max(paramInt3, m) - i6);
             Sgemm.sgemm("N", "N", i5, i24, i24, 1.0F, paramArrayOfFloat3, i6 - 1 + (m + i9 - 1) * paramInt9 + paramInt8, paramInt9, paramArrayOfFloat6, i9 - 1 + (i9 - 1) * paramInt17 + paramInt16, paramInt17, 0.0F, paramArrayOfFloat7, paramInt19, paramInt20);
@@ -434,7 +434,7 @@ public final class Slaqr5
           if (paramBoolean2)
           {
             i6 = paramInt10;
-            for (i29 = (paramInt11 - paramInt10 + paramInt18) / paramInt18; i29 > 0; i29--)
+            for (int i29 = (paramInt11 - paramInt10 + paramInt18) / paramInt18; i29 > 0; i29--)
             {
               i5 = Math.min(paramInt18, paramInt11 - i6 + 1);
               Sgemm.sgemm("N", "N", i5, i24, i24, 1.0F, paramArrayOfFloat4, i6 - 1 + (m + i9 - 1) * paramInt13 + paramInt12, paramInt13, paramArrayOfFloat6, i9 - 1 + (i9 - 1) * paramInt17 + paramInt16, paramInt17, 0.0F, paramArrayOfFloat7, paramInt19, paramInt20);
@@ -452,7 +452,7 @@ public final class Slaqr5
           i14 = i2 - i1 - (i23 + 1);
           i12 = i23 + 1;
           i4 = Math.min(i22, paramInt4) + 1;
-          for (i29 = (i3 - (Math.min(i22, paramInt4) + 1) + paramInt21) / paramInt21; i29 > 0; i29--)
+          for (int i29 = (i3 - (Math.min(i22, paramInt4) + 1) + paramInt21) / paramInt21; i29 > 0; i29--)
           {
             i5 = Math.min(paramInt21, i3 - i4 + 1);
             Slacpy.slacpy("ALL", i12, i5, paramArrayOfFloat3, m + 1 + i1 - 1 + (i4 - 1) * paramInt9 + paramInt8, paramInt9, paramArrayOfFloat8, i14 + 1 - 1 + (1 - 1) * paramInt23 + paramInt22, paramInt23);
@@ -466,7 +466,7 @@ public final class Slaqr5
             i4 += paramInt21;
           }
           i6 = i7;
-          for (i29 = (Math.max(m, paramInt3) - 1 - i7 + paramInt18) / paramInt18; i29 > 0; i29--)
+          for (int i29 = (Math.max(m, paramInt3) - 1 - i7 + paramInt18) / paramInt18; i29 > 0; i29--)
           {
             i5 = Math.min(paramInt18, Math.max(m, paramInt3) - i6);
             Slacpy.slacpy("ALL", i5, i12, paramArrayOfFloat3, i6 - 1 + (m + 1 + i1 - 1) * paramInt9 + paramInt8, paramInt9, paramArrayOfFloat7, 1 - 1 + (1 + i14 - 1) * paramInt20 + paramInt19, paramInt20);
@@ -482,7 +482,7 @@ public final class Slaqr5
           if (paramBoolean2)
           {
             i6 = paramInt10;
-            for (i29 = (paramInt11 - paramInt10 + paramInt18) / paramInt18; i29 > 0; i29--)
+            for (int i29 = (paramInt11 - paramInt10 + paramInt18) / paramInt18; i29 > 0; i29--)
             {
               i5 = Math.min(paramInt18, paramInt11 - i6 + 1);
               Slacpy.slacpy("ALL", i5, i12, paramArrayOfFloat4, i6 - 1 + (m + 1 + i1 - 1) * paramInt13 + paramInt12, paramInt13, paramArrayOfFloat7, 1 - 1 + (1 + i14 - 1) * paramInt20 + paramInt19, paramInt20);

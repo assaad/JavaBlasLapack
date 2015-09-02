@@ -40,7 +40,7 @@ public final class Dgesc2
       paramdoubleW.val *= d2;
     }
     i = paramInt1;
-    for (k = (1 - paramInt1 + -1) / -1; k > 0; k--)
+    for (int k = (1 - paramInt1 + -1) / -1; k > 0; k--)
     {
       d2 = 1.0D / paramArrayOfDouble1[(i - 1 + (i - 1) * paramInt3 + paramInt2)];
       paramArrayOfDouble2[(i - 1 + paramInt4)] *= d2;

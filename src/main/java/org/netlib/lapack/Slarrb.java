@@ -102,7 +102,7 @@ public final class Slarrb
       j = k;
       i6 = i5;
       n = 1;
-      for (i9 = i6 - 1 + 1; i9 > 0; i9--)
+      for (int i9 = i6 - 1 + 1; i9 > 0; i9--)
       {
         i2 = 2 * j;
         m = j - paramInt6;
@@ -149,7 +149,7 @@ public final class Slarrb
       if ((i5 <= 0 ? 0 : 1) == 0) {}
     } while (((i1 > i ? 0 : 1) != 0 ? 1 : 0) != 0);
     j = paramInt4;
-    for (i9 = paramInt5 - paramInt4 + 1; i9 > 0; i9--)
+    for (int i9 = paramInt5 - paramInt4 + 1; i9 > 0; i9--)
     {
       i2 = 2 * j;
       m = j - paramInt6;
@@ -161,7 +161,7 @@ public final class Slarrb
       j += 1;
     }
     j = paramInt4 + 1;
-    for (i9 = paramInt5 - (paramInt4 + 1) + 1; i9 > 0; i9--)
+    for (int i9 = paramInt5 - (paramInt4 + 1) + 1; i9 > 0; i9--)
     {
       i2 = 2 * j;
       m = j - paramInt6;

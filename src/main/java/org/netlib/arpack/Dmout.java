@@ -26,7 +26,7 @@ public final class Dmout
       i += 1;
     }
     i = n + 1;
-    for (i2 = 80 - (n + 1) + 1; i2 > 0; i2--)
+    for (int i2 = 80 - (n + 1) + 1; i2 > 0; i2--)
     {
       str = Util.stringInsert(str, " ", i, i);
       i += 1;
@@ -52,7 +52,7 @@ public final class Dmout
       if ((i1 > 4 ? 0 : 1) != 0)
       {
         k = 1;
-        for (i2 = (paramInt3 - 1 + 5) / 5; i2 > 0; i2--)
+        for (int i2 = (paramInt3 - 1 + 5) / 5; i2 > 0; i2--)
         {
           m = Math.min(paramInt3, k + 4);
           localVector.clear();
@@ -84,7 +84,7 @@ public final class Dmout
       else if ((i1 > 6 ? 0 : 1) != 0)
       {
         k = 1;
-        for (i2 = (paramInt3 - 1 + 4) / 4; i2 > 0; i2--)
+        for (int i2 = (paramInt3 - 1 + 4) / 4; i2 > 0; i2--)
         {
           m = Math.min(paramInt3, k + 3);
           localVector.clear();
@@ -116,7 +116,7 @@ public final class Dmout
       else if ((i1 > 10 ? 0 : 1) != 0)
       {
         k = 1;
-        for (i2 = (paramInt3 - 1 + 3) / 3; i2 > 0; i2--)
+        for (int i2 = (paramInt3 - 1 + 3) / 3; i2 > 0; i2--)
         {
           m = Math.min(paramInt3, k + 2);
           localVector.clear();
@@ -148,7 +148,7 @@ public final class Dmout
       else
       {
         k = 1;
-        for (i2 = (paramInt3 - 1 + 2) / 2; i2 > 0; i2--)
+        for (int i2 = (paramInt3 - 1 + 2) / 2; i2 > 0; i2--)
         {
           m = Math.min(paramInt3, k + 1);
           localVector.clear();
@@ -181,7 +181,7 @@ public final class Dmout
     else if ((i1 > 4 ? 0 : 1) != 0)
     {
       k = 1;
-      for (i2 = (paramInt3 - 1 + 10) / 10; i2 > 0; i2--)
+      for (int i2 = (paramInt3 - 1 + 10) / 10; i2 > 0; i2--)
       {
         m = Math.min(paramInt3, k + 9);
         localVector.clear();
@@ -213,7 +213,7 @@ public final class Dmout
     else if ((i1 > 6 ? 0 : 1) != 0)
     {
       k = 1;
-      for (i2 = (paramInt3 - 1 + 8) / 8; i2 > 0; i2--)
+      for (int i2 = (paramInt3 - 1 + 8) / 8; i2 > 0; i2--)
       {
         m = Math.min(paramInt3, k + 7);
         localVector.clear();
@@ -245,7 +245,7 @@ public final class Dmout
     else if ((i1 > 10 ? 0 : 1) != 0)
     {
       k = 1;
-      for (i2 = (paramInt3 - 1 + 6) / 6; i2 > 0; i2--)
+      for (int i2 = (paramInt3 - 1 + 6) / 6; i2 > 0; i2--)
       {
         m = Math.min(paramInt3, k + 5);
         localVector.clear();
@@ -277,7 +277,7 @@ public final class Dmout
     else
     {
       k = 1;
-      for (i2 = (paramInt3 - 1 + 5) / 5; i2 > 0; i2--)
+      for (int i2 = (paramInt3 - 1 + 5) / 5; i2 > 0; i2--)
       {
         m = Math.min(paramInt3, k + 4);
         localVector.clear();

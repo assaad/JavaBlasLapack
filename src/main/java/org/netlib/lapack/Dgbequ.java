@@ -18,6 +18,7 @@ public final class Dgbequ
     paramintW.val = 0;
     if ((paramInt1 >= 0 ? 0 : 1) != 0) {
       paramintW.val = -1;
+
     } else if ((paramInt2 >= 0 ? 0 : 1) != 0) {
       paramintW.val = -2;
     } else if ((paramInt3 >= 0 ? 0 : 1) != 0) {
@@ -51,7 +52,7 @@ public final class Dgbequ
     k = paramInt4 + 1;
     j = 1;
     int n;
-    for (m = paramInt2 - 1 + 1; m > 0; m--)
+    for (int m = paramInt2 - 1 + 1; m > 0; m--)
     {
       i = Math.max(j - paramInt4, 1);
       for (n = Math.min(j + paramInt3, paramInt1) - Math.max(j - paramInt4, 1) + 1; n > 0; n--)
@@ -64,7 +65,7 @@ public final class Dgbequ
     d3 = d1;
     d2 = 0.0D;
     i = 1;
-    for (m = paramInt1 - 1 + 1; m > 0; m--)
+    for (int m = paramInt1 - 1 + 1; m > 0; m--)
     {
       d2 = Math.max(d2, paramArrayOfDouble2[(i - 1 + paramInt7)]);
       d3 = Math.min(d3, paramArrayOfDouble2[(i - 1 + paramInt7)]);
@@ -74,7 +75,7 @@ public final class Dgbequ
     if ((d3 != 0.0D ? 0 : 1) != 0)
     {
       i = 1;
-      for (m = paramInt1 - 1 + 1; m > 0; m--)
+      for (int m = paramInt1 - 1 + 1; m > 0; m--)
       {
         if ((paramArrayOfDouble2[(i - 1 + paramInt7)] != 0.0D ? 0 : 1) != 0)
         {
@@ -87,7 +88,7 @@ public final class Dgbequ
     else
     {
       i = 1;
-      for (m = paramInt1 - 1 + 1; m > 0; m--)
+      for (int m = paramInt1 - 1 + 1; m > 0; m--)
       {
         paramArrayOfDouble2[(i - 1 + paramInt7)] = (1.0D / Math.min(Math.max(paramArrayOfDouble2[(i - 1 + paramInt7)], d4), d1));
         i += 1;
@@ -95,14 +96,14 @@ public final class Dgbequ
       paramdoubleW1.val = (Math.max(d3, d4) / Math.min(d2, d1));
     }
     j = 1;
-    for (m = paramInt2 - 1 + 1; m > 0; m--)
+    for (int m = paramInt2 - 1 + 1; m > 0; m--)
     {
       paramArrayOfDouble3[(j - 1 + paramInt8)] = 0.0D;
       j += 1;
     }
     k = paramInt4 + 1;
     j = 1;
-    for (m = paramInt2 - 1 + 1; m > 0; m--)
+    for (int m = paramInt2 - 1 + 1; m > 0; m--)
     {
       i = Math.max(j - paramInt4, 1);
       for (n = Math.min(j + paramInt3, paramInt1) - Math.max(j - paramInt4, 1) + 1; n > 0; n--)
@@ -115,7 +116,7 @@ public final class Dgbequ
     d3 = d1;
     d2 = 0.0D;
     j = 1;
-    for (m = paramInt2 - 1 + 1; m > 0; m--)
+    for (int m = paramInt2 - 1 + 1; m > 0; m--)
     {
       d3 = Math.min(d3, paramArrayOfDouble3[(j - 1 + paramInt8)]);
       d2 = Math.max(d2, paramArrayOfDouble3[(j - 1 + paramInt8)]);
@@ -124,7 +125,7 @@ public final class Dgbequ
     if ((d3 != 0.0D ? 0 : 1) != 0)
     {
       j = 1;
-      for (m = paramInt2 - 1 + 1; m > 0; m--)
+      for (int m = paramInt2 - 1 + 1; m > 0; m--)
       {
         if ((paramArrayOfDouble3[(j - 1 + paramInt8)] != 0.0D ? 0 : 1) != 0)
         {
@@ -137,7 +138,7 @@ public final class Dgbequ
     else
     {
       j = 1;
-      for (m = paramInt2 - 1 + 1; m > 0; m--)
+      for (int m = paramInt2 - 1 + 1; m > 0; m--)
       {
         paramArrayOfDouble3[(j - 1 + paramInt8)] = (1.0D / Math.min(Math.max(paramArrayOfDouble3[(j - 1 + paramInt8)], d4), d1));
         j += 1;

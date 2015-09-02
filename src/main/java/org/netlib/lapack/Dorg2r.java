@@ -55,7 +55,7 @@ public final class Dorg2r
       j += 1;
     }
     i = paramInt3;
-    for (m = (1 - paramInt3 + -1) / -1; m > 0; m--)
+    for (int m = (1 - paramInt3 + -1) / -1; m > 0; m--)
     {
       if ((i >= paramInt2 ? 0 : 1) != 0)
       {

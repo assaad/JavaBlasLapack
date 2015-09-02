@@ -76,31 +76,31 @@ public final class Dlasd2
       j += -1;
     }
     j = i8;
-    for (i9 = i5 - i8 + 1; i9 > 0; i9--)
+    for (int i9 = i5 - i8 + 1; i9 > 0; i9--)
     {
       paramArrayOfDouble2[(j - 1 + paramInt5)] = (paramDouble2 * paramArrayOfDouble4[(j - 1 + (i8 - 1) * paramInt9 + paramInt8)]);
       j += 1;
     }
     j = 2;
-    for (i9 = i7 - 2 + 1; i9 > 0; i9--)
+    for (int i9 = i7 - 2 + 1; i9 > 0; i9--)
     {
       paramArrayOfInt5[(j - 1 + paramInt19)] = 1;
       j += 1;
     }
     j = i8;
-    for (i9 = i6 - i8 + 1; i9 > 0; i9--)
+    for (int i9 = i6 - i8 + 1; i9 > 0; i9--)
     {
       paramArrayOfInt5[(j - 1 + paramInt19)] = 2;
       j += 1;
     }
     j = i8;
-    for (i9 = i6 - i8 + 1; i9 > 0; i9--)
+    for (int i9 = i6 - i8 + 1; i9 > 0; i9--)
     {
       paramArrayOfInt4[(j - 1 + paramInt18)] += i7;
       j += 1;
     }
     j = 2;
-    for (i9 = i6 - 2 + 1; i9 > 0; i9--)
+    for (int i9 = i6 - 2 + 1; i9 > 0; i9--)
     {
       paramArrayOfDouble5[(j - 1 + paramInt10)] = paramArrayOfDouble1[(paramArrayOfInt4[(j - 1 + paramInt18)] - 1 + paramInt4)];
       paramArrayOfDouble6[(j - 1 + (1 - 1) * paramInt12 + paramInt11)] = paramArrayOfDouble2[(paramArrayOfInt4[(j - 1 + paramInt18)] - 1 + paramInt5)];
@@ -109,7 +109,7 @@ public final class Dlasd2
     }
     Dlamrg.dlamrg(paramInt1, paramInt2, paramArrayOfDouble5, 2 - 1 + paramInt10, 1, 1, paramArrayOfInt2, 2 - 1 + paramInt16);
     j = 2;
-    for (i9 = i6 - 2 + 1; i9 > 0; i9--)
+    for (int i9 = i6 - 2 + 1; i9 > 0; i9--)
     {
       k = 1 + paramArrayOfInt2[(j - 1 + paramInt16)];
       paramArrayOfDouble1[(j - 1 + paramInt4)] = paramArrayOfDouble5[(k - 1 + paramInt10)];
@@ -123,7 +123,7 @@ public final class Dlasd2
     paramintW1.val = 1;
     i4 = i6 + 1;
     i1 = 2;
-    for (i9 = i6 - 2 + 1; i9 > 0; i9--)
+    for (int i90 = i6 - 2 + 1; i90 > 0; i90--)
     {
       if ((Math.abs(paramArrayOfDouble2[(i1 - 1 + paramInt5)]) > d6 ? 0 : 1) != 0)
       {
@@ -131,7 +131,113 @@ public final class Dlasd2
         paramArrayOfInt1[(i4 - 1 + paramInt15)] = i1;
         paramArrayOfInt5[(i1 - 1 + paramInt19)] = 4;
         if ((i1 != i6 ? 0 : 1) != 0) {
-          break label1681;
+          i1 = 1;
+          for (int i9 = 4 - 1 + 1; i9 > 0; i9--)
+          {
+            arrayOfInt1[(i1 - 1)] = 0;
+            i1 += 1;
+          }
+          i1 = 2;
+          for (int i9 = i6 - 2 + 1; i9 > 0; i9--)
+          {
+            i = paramArrayOfInt5[(i1 - 1 + paramInt19)];
+            arrayOfInt1[(i - 1)] += 1;
+            i1 += 1;
+          }
+          arrayOfInt2[(1 - 1)] = 2;
+          arrayOfInt2[(2 - 1)] = (2 + arrayOfInt1[(1 - 1)]);
+          arrayOfInt2[(3 - 1)] = (arrayOfInt2[(2 - 1)] + arrayOfInt1[(2 - 1)]);
+          arrayOfInt2[(4 - 1)] = (arrayOfInt2[(3 - 1)] + arrayOfInt1[(3 - 1)]);
+          i1 = 2;
+          for (int i9 = i6 - 2 + 1; i9 > 0; i9--)
+          {
+            i2 = paramArrayOfInt1[(i1 - 1 + paramInt15)];
+            i = paramArrayOfInt5[(i2 - 1 + paramInt19)];
+            paramArrayOfInt3[(arrayOfInt2[(i - 1)] - 1 + paramInt17)] = i1;
+            arrayOfInt2[(i - 1)] += 1;
+            i1 += 1;
+          }
+          i1 = 2;
+          for (int i9 = i6 - 2 + 1; i9 > 0; i9--)
+          {
+            i2 = paramArrayOfInt1[(i1 - 1 + paramInt15)];
+            paramArrayOfDouble5[(i1 - 1 + paramInt10)] = paramArrayOfDouble1[(i2 - 1 + paramInt4)];
+            m = paramArrayOfInt4[(paramArrayOfInt2[(paramArrayOfInt1[(paramArrayOfInt3[(i1 - 1 + paramInt17)] - 1 + paramInt15)] - 1 + paramInt16)] + 1 - 1 + paramInt18)];
+            if ((m > i7 ? 0 : 1) != 0) {
+              m -= 1;
+            }
+            Dcopy.dcopy(i6, paramArrayOfDouble3, 1 - 1 + (m - 1) * paramInt7 + paramInt6, 1, paramArrayOfDouble6, 1 - 1 + (i1 - 1) * paramInt12 + paramInt11, 1);
+            Dcopy.dcopy(i5, paramArrayOfDouble4, m - 1 + (1 - 1) * paramInt9 + paramInt8, paramInt9, paramArrayOfDouble7, i1 - 1 + (1 - 1) * paramInt14 + paramInt13, paramInt14);
+            i1 += 1;
+          }
+          paramArrayOfDouble5[(1 - 1 + paramInt10)] = 0.0D;
+          d3 = d6 / 2.0D;
+          if ((Math.abs(paramArrayOfDouble5[(2 - 1 + paramInt10)]) > d3 ? 0 : 1) != 0) {
+            paramArrayOfDouble5[(2 - 1 + paramInt10)] = d3;
+          }
+          if ((i5 <= i6 ? 0 : 1) != 0)
+          {
+            paramArrayOfDouble2[(1 - 1 + paramInt5)] = Dlapy2.dlapy2(d7, paramArrayOfDouble2[(i5 - 1 + paramInt5)]);
+            if ((paramArrayOfDouble2[(1 - 1 + paramInt5)] > d6 ? 0 : 1) != 0)
+            {
+              d1 = 1.0D;
+              d4 = 0.0D;
+              paramArrayOfDouble2[(1 - 1 + paramInt5)] = d6;
+            }
+            else
+            {
+              d1 = d7 / paramArrayOfDouble2[(1 - 1 + paramInt5)];
+              d4 = paramArrayOfDouble2[(i5 - 1 + paramInt5)] / paramArrayOfDouble2[(1 - 1 + paramInt5)];
+            }
+          }
+          else if ((Math.abs(d7) > d6 ? 0 : 1) != 0)
+          {
+            paramArrayOfDouble2[(1 - 1 + paramInt5)] = d6;
+          }
+          else
+          {
+            paramArrayOfDouble2[(1 - 1 + paramInt5)] = d7;
+          }
+          Dcopy.dcopy(paramintW1.val - 1, paramArrayOfDouble6, 2 - 1 + (1 - 1) * paramInt12 + paramInt11, 1, paramArrayOfDouble2, 2 - 1 + paramInt5, 1);
+          Dlaset.dlaset("A", i6, 1, 0.0D, 0.0D, paramArrayOfDouble6, paramInt11, paramInt12);
+          paramArrayOfDouble6[(i7 - 1 + (1 - 1) * paramInt12 + paramInt11)] = 1.0D;
+          if ((i5 <= i6 ? 0 : 1) != 0)
+          {
+            j = 1;
+            for (int i9 = i7 - 1 + 1; i9 > 0; i9--)
+            {
+              paramArrayOfDouble4[(i5 - 1 + (j - 1) * paramInt9 + paramInt8)] = (-(d4 * paramArrayOfDouble4[(i7 - 1 + (j - 1) * paramInt9 + paramInt8)]));
+              paramArrayOfDouble7[(1 - 1 + (j - 1) * paramInt14 + paramInt13)] = (d1 * paramArrayOfDouble4[(i7 - 1 + (j - 1) * paramInt9 + paramInt8)]);
+              j += 1;
+            }
+            j = i8;
+            for (int i9 = i5 - i8 + 1; i9 > 0; i9--)
+            {
+              paramArrayOfDouble7[(1 - 1 + (j - 1) * paramInt14 + paramInt13)] = (d4 * paramArrayOfDouble4[(i5 - 1 + (j - 1) * paramInt9 + paramInt8)]);
+              paramArrayOfDouble4[(i5 - 1 + (j - 1) * paramInt9 + paramInt8)] = (d1 * paramArrayOfDouble4[(i5 - 1 + (j - 1) * paramInt9 + paramInt8)]);
+              j += 1;
+            }
+          }
+          else
+          {
+            Dcopy.dcopy(i5, paramArrayOfDouble4, i7 - 1 + (1 - 1) * paramInt9 + paramInt8, paramInt9, paramArrayOfDouble7, 1 - 1 + (1 - 1) * paramInt14 + paramInt13, paramInt14);
+          }
+          if ((i5 <= i6 ? 0 : 1) != 0) {
+            Dcopy.dcopy(i5, paramArrayOfDouble4, i5 - 1 + (1 - 1) * paramInt9 + paramInt8, paramInt9, paramArrayOfDouble7, i5 - 1 + (1 - 1) * paramInt14 + paramInt13, paramInt14);
+          }
+          if ((i6 <= paramintW1.val ? 0 : 1) != 0)
+          {
+            Dcopy.dcopy(i6 - paramintW1.val, paramArrayOfDouble5, paramintW1.val + 1 - 1 + paramInt10, 1, paramArrayOfDouble1, paramintW1.val + 1 - 1 + paramInt4, 1);
+            Dlacpy.dlacpy("A", i6, i6 - paramintW1.val, paramArrayOfDouble6, 1 - 1 + (paramintW1.val + 1 - 1) * paramInt12 + paramInt11, paramInt12, paramArrayOfDouble3, 1 - 1 + (paramintW1.val + 1 - 1) * paramInt7 + paramInt6, paramInt7);
+            Dlacpy.dlacpy("A", i6 - paramintW1.val, i5, paramArrayOfDouble7, paramintW1.val + 1 - 1 + (1 - 1) * paramInt14 + paramInt13, paramInt14, paramArrayOfDouble4, paramintW1.val + 1 - 1 + (1 - 1) * paramInt9 + paramInt8, paramInt9);
+          }
+          i1 = 1;
+          for (int i9 = 4 - 1 + 1; i9 > 0; i9--)
+          {
+            paramArrayOfInt5[(i1 - 1 + paramInt19)] = arrayOfInt1[(i1 - 1)];
+            i1 += 1;
+          }
+          return;
         }
       }
       else
@@ -196,13 +302,13 @@ public final class Dlasd2
     paramArrayOfInt1[(paramintW1.val - 1 + paramInt15)] = i3;
     label1681:
     i1 = 1;
-    for (i9 = 4 - 1 + 1; i9 > 0; i9--)
+    for (int i9 = 4 - 1 + 1; i9 > 0; i9--)
     {
       arrayOfInt1[(i1 - 1)] = 0;
       i1 += 1;
     }
     i1 = 2;
-    for (i9 = i6 - 2 + 1; i9 > 0; i9--)
+    for (int i9 = i6 - 2 + 1; i9 > 0; i9--)
     {
       i = paramArrayOfInt5[(i1 - 1 + paramInt19)];
       arrayOfInt1[(i - 1)] += 1;
@@ -213,7 +319,7 @@ public final class Dlasd2
     arrayOfInt2[(3 - 1)] = (arrayOfInt2[(2 - 1)] + arrayOfInt1[(2 - 1)]);
     arrayOfInt2[(4 - 1)] = (arrayOfInt2[(3 - 1)] + arrayOfInt1[(3 - 1)]);
     i1 = 2;
-    for (i9 = i6 - 2 + 1; i9 > 0; i9--)
+    for (int i9 = i6 - 2 + 1; i9 > 0; i9--)
     {
       i2 = paramArrayOfInt1[(i1 - 1 + paramInt15)];
       i = paramArrayOfInt5[(i2 - 1 + paramInt19)];
@@ -222,7 +328,7 @@ public final class Dlasd2
       i1 += 1;
     }
     i1 = 2;
-    for (i9 = i6 - 2 + 1; i9 > 0; i9--)
+    for (int i9 = i6 - 2 + 1; i9 > 0; i9--)
     {
       i2 = paramArrayOfInt1[(i1 - 1 + paramInt15)];
       paramArrayOfDouble5[(i1 - 1 + paramInt10)] = paramArrayOfDouble1[(i2 - 1 + paramInt4)];
@@ -268,14 +374,14 @@ public final class Dlasd2
     if ((i5 <= i6 ? 0 : 1) != 0)
     {
       j = 1;
-      for (i9 = i7 - 1 + 1; i9 > 0; i9--)
+      for (int i9 = i7 - 1 + 1; i9 > 0; i9--)
       {
         paramArrayOfDouble4[(i5 - 1 + (j - 1) * paramInt9 + paramInt8)] = (-(d4 * paramArrayOfDouble4[(i7 - 1 + (j - 1) * paramInt9 + paramInt8)]));
         paramArrayOfDouble7[(1 - 1 + (j - 1) * paramInt14 + paramInt13)] = (d1 * paramArrayOfDouble4[(i7 - 1 + (j - 1) * paramInt9 + paramInt8)]);
         j += 1;
       }
       j = i8;
-      for (i9 = i5 - i8 + 1; i9 > 0; i9--)
+      for (int i9 = i5 - i8 + 1; i9 > 0; i9--)
       {
         paramArrayOfDouble7[(1 - 1 + (j - 1) * paramInt14 + paramInt13)] = (d4 * paramArrayOfDouble4[(i5 - 1 + (j - 1) * paramInt9 + paramInt8)]);
         paramArrayOfDouble4[(i5 - 1 + (j - 1) * paramInt9 + paramInt8)] = (d1 * paramArrayOfDouble4[(i5 - 1 + (j - 1) * paramInt9 + paramInt8)]);
@@ -296,7 +402,7 @@ public final class Dlasd2
       Dlacpy.dlacpy("A", i6 - paramintW1.val, i5, paramArrayOfDouble7, paramintW1.val + 1 - 1 + (1 - 1) * paramInt14 + paramInt13, paramInt14, paramArrayOfDouble4, paramintW1.val + 1 - 1 + (1 - 1) * paramInt9 + paramInt8, paramInt9);
     }
     i1 = 1;
-    for (i9 = 4 - 1 + 1; i9 > 0; i9--)
+    for (int i9 = 4 - 1 + 1; i9 > 0; i9--)
     {
       paramArrayOfInt5[(i1 - 1 + paramInt19)] = arrayOfInt1[(i1 - 1)];
       i1 += 1;

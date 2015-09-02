@@ -16,7 +16,7 @@ public final class Sscal
     {
       m = paramInt1 * paramInt3;
       i = 1;
-      for (n = (m - 1 + paramInt3) / paramInt3; n > 0; n--)
+      for (int n = (m - 1 + paramInt3) / paramInt3; n > 0; n--)
       {
         paramArrayOfFloat[(i - 1 + paramInt2)] = (paramFloat * paramArrayOfFloat[(i - 1 + paramInt2)]);
         i += paramInt3;
@@ -27,7 +27,7 @@ public final class Sscal
     if ((j != 0 ? 0 : 1) == 0)
     {
       i = 1;
-      for (n = j - 1 + 1; n > 0; n--)
+      for (int n = j - 1 + 1; n > 0; n--)
       {
         paramArrayOfFloat[(i - 1 + paramInt2)] = (paramFloat * paramArrayOfFloat[(i - 1 + paramInt2)]);
         i += 1;

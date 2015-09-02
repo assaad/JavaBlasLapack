@@ -180,7 +180,7 @@ public final class Dlasda
     }
     i5 = (int)Math.pow(2, localintW2.val);
     i8 = localintW2.val;
-    for (i30 = (1 - localintW2.val + -1) / -1; i30 > 0; i30--)
+    for (int i30 = (1 - localintW2.val + -1) / -1; i30 > 0; i30--)
     {
       i9 = i8 * 2 - 1;
       if ((i8 != 1 ? 0 : 1) != 0)

@@ -22,7 +22,7 @@ public final class Icopy
         k = (-paramInt1 + 1) * paramInt5 + 1;
       }
       i = 1;
-      for (m = paramInt1 - 1 + 1; m > 0; m--)
+      for (int m = paramInt1 - 1 + 1; m > 0; m--)
       {
         paramArrayOfInt2[(k - 1 + paramInt4)] = paramArrayOfInt1[(j - 1 + paramInt2)];
         j += paramInt3;

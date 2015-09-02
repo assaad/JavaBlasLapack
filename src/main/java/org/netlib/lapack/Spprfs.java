@@ -50,7 +50,7 @@ public final class Spprfs
     if (((paramInt2 != 0 ? 0 : 1) == 0 ? 0 : 1) != 0)
     {
       m = 1;
-      for (i3 = paramInt2 - 1 + 1; i3 > 0; i3--)
+      for (int i3 = paramInt2 - 1 + 1; i3 > 0; i3--)
       {
         paramArrayOfFloat5[(m - 1 + paramInt9)] = 0.0F;
         paramArrayOfFloat6[(m - 1 + paramInt10)] = 0.0F;
@@ -73,7 +73,7 @@ public final class Spprfs
         Scopy.scopy(paramInt1, paramArrayOfFloat3, 1 - 1 + (m - 1) * paramInt6 + paramInt5, 1, paramArrayOfFloat7, paramInt1 + 1 - 1 + paramInt11, 1);
         Sspmv.sspmv(paramString, paramInt1, -1.0F, paramArrayOfFloat1, paramInt3, paramArrayOfFloat4, 1 - 1 + (m - 1) * paramInt8 + paramInt7, 1, 1.0F, paramArrayOfFloat7, paramInt1 + 1 - 1 + paramInt11, 1);
         j = 1;
-        for (i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
+        for (int i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
         {
           paramArrayOfFloat7[(j - 1 + paramInt11)] = Math.abs(paramArrayOfFloat3[(j - 1 + (m - 1) * paramInt6 + paramInt5)]);
           j += 1;
@@ -83,7 +83,7 @@ public final class Spprfs
         if (bool)
         {
           n = 1;
-          for (i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
+          for (int i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
           {
             f3 = 0.0F;
             f7 = Math.abs(paramArrayOfFloat4[(n - 1 + (m - 1) * paramInt8 + paramInt7)]);
@@ -104,7 +104,7 @@ public final class Spprfs
         else
         {
           n = 1;
-          for (i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
+          for (int i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
           {
             f3 = 0.0F;
             f7 = Math.abs(paramArrayOfFloat4[(n - 1 + (m - 1) * paramInt8 + paramInt7)]);
@@ -125,7 +125,7 @@ public final class Spprfs
         }
         f3 = 0.0F;
         j = 1;
-        for (i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
+        for (int i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
         {
           if ((paramArrayOfFloat7[(j - 1 + paramInt11)] <= f5 ? 0 : 1) != 0) {
             f3 = Math.max(f3, Math.abs(paramArrayOfFloat7[(paramInt1 + j - 1 + paramInt11)]) / paramArrayOfFloat7[(j - 1 + paramInt11)]);
@@ -166,7 +166,7 @@ public final class Spprfs
         {
           Spptrs.spptrs(paramString, paramInt1, 1, paramArrayOfFloat2, paramInt4, paramArrayOfFloat7, paramInt1 + 1 - 1 + paramInt11, paramInt1, paramintW);
           j = 1;
-          for (i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
+          for (int i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
           {
             paramArrayOfFloat7[(paramInt1 + j - 1 + paramInt11)] = (paramArrayOfFloat7[(j - 1 + paramInt11)] * paramArrayOfFloat7[(paramInt1 + j - 1 + paramInt11)]);
             j += 1;
@@ -175,7 +175,7 @@ public final class Spprfs
         else if ((localintW.val != 2 ? 0 : 1) != 0)
         {
           j = 1;
-          for (i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
+          for (int i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
           {
             paramArrayOfFloat7[(paramInt1 + j - 1 + paramInt11)] = (paramArrayOfFloat7[(j - 1 + paramInt11)] * paramArrayOfFloat7[(paramInt1 + j - 1 + paramInt11)]);
             j += 1;
@@ -185,7 +185,7 @@ public final class Spprfs
       }
       f2 = 0.0F;
       j = 1;
-      for (i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
+      for (int i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
       {
         f2 = Math.max(f2, Math.abs(paramArrayOfFloat4[(j - 1 + (m - 1) * paramInt8 + paramInt7)]));
         j += 1;

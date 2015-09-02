@@ -25,7 +25,7 @@ public final class Dswap
         k = (-paramInt1 + 1) * paramInt5 + 1;
       }
       i = 1;
-      for (i1 = paramInt1 - 1 + 1; i1 > 0; i1--)
+      for (int i1 = paramInt1 - 1 + 1; i1 > 0; i1--)
       {
         d = paramArrayOfDouble1[(j - 1 + paramInt2)];
         paramArrayOfDouble1[(j - 1 + paramInt2)] = paramArrayOfDouble2[(k - 1 + paramInt4)];
@@ -40,7 +40,7 @@ public final class Dswap
     if ((m != 0 ? 0 : 1) == 0)
     {
       i = 1;
-      for (i1 = m - 1 + 1; i1 > 0; i1--)
+      for (int i1 = m - 1 + 1; i1 > 0; i1--)
       {
         d = paramArrayOfDouble1[(i - 1 + paramInt2)];
         paramArrayOfDouble1[(i - 1 + paramInt2)] = paramArrayOfDouble2[(i - 1 + paramInt4)];

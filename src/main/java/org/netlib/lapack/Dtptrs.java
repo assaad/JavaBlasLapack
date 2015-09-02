@@ -47,7 +47,7 @@ public final class Dtptrs
       {
         j = 1;
         paramintW.val = 1;
-        for (k = paramInt1 - 1 + 1; k > 0; k--)
+        for (int k = paramInt1 - 1 + 1; k > 0; k--)
         {
           if ((paramArrayOfDouble1[(j + paramintW.val - 1 - 1 + paramInt3)] != 0.0D ? 0 : 1) != 0) {
             return;
@@ -60,7 +60,7 @@ public final class Dtptrs
       {
         j = 1;
         paramintW.val = 1;
-        for (k = paramInt1 - 1 + 1; k > 0; k--)
+        for (int k = paramInt1 - 1 + 1; k > 0; k--)
         {
           if ((paramArrayOfDouble1[(j - 1 + paramInt3)] != 0.0D ? 0 : 1) != 0) {
             return;

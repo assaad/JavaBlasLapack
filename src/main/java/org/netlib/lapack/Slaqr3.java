@@ -282,7 +282,7 @@ public final class Slaqr3
         i5 = paramInt2;
       }
       i3 = i5;
-      for (i13 = (i4 - 1 - i5 + paramInt18) / paramInt18; i13 > 0; i13--)
+      for (int i13 = (i4 - 1 - i5 + paramInt18) / paramInt18; i13 > 0; i13--)
       {
         i2 = Math.min(paramInt18, i4 - i3);
         Sgemm.sgemm("N", "N", i2, k, k, 1.0F, paramArrayOfFloat1, i3 - 1 + (i4 - 1) * paramInt6 + paramInt5, paramInt6, paramArrayOfFloat5, paramInt13, paramInt14, 0.0F, paramArrayOfFloat7, paramInt19, paramInt20);
@@ -292,7 +292,7 @@ public final class Slaqr3
       if (paramBoolean1)
       {
         n = paramInt3 + 1;
-        for (i13 = (paramInt1 - (paramInt3 + 1) + paramInt15) / paramInt15; i13 > 0; i13--)
+        for (int i13 = (paramInt1 - (paramInt3 + 1) + paramInt15) / paramInt15; i13 > 0; i13--)
         {
           i2 = Math.min(paramInt15, paramInt1 - n + 1);
           Sgemm.sgemm("C", "N", k, i2, k, 1.0F, paramArrayOfFloat5, paramInt13, paramInt14, paramArrayOfFloat1, i4 - 1 + (n - 1) * paramInt6 + paramInt5, paramInt6, 0.0F, paramArrayOfFloat6, paramInt16, paramInt17);
@@ -303,7 +303,7 @@ public final class Slaqr3
       if (paramBoolean2)
       {
         i3 = paramInt7;
-        for (i13 = (paramInt8 - paramInt7 + paramInt18) / paramInt18; i13 > 0; i13--)
+        for (int i13 = (paramInt8 - paramInt7 + paramInt18) / paramInt18; i13 > 0; i13--)
         {
           i2 = Math.min(paramInt18, paramInt8 - i3 + 1);
           Sgemm.sgemm("N", "N", i2, k, k, 1.0F, paramArrayOfFloat2, i3 - 1 + (i4 - 1) * paramInt10 + paramInt9, paramInt10, paramArrayOfFloat5, paramInt13, paramInt14, 0.0F, paramArrayOfFloat7, paramInt19, paramInt20);

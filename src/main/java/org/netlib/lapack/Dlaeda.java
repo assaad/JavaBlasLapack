@@ -46,14 +46,14 @@ public final class Dlaeda
     Dcopy.dcopy(i, paramArrayOfDouble2, paramArrayOfInt5[(k - 1 + paramInt11)] + i - 1 - 1 + paramInt10, i, paramArrayOfDouble3, i1 - i - 1 + paramInt12, 1);
     Dcopy.dcopy(j, paramArrayOfDouble2, paramArrayOfInt5[(k + 1 - 1 + paramInt11)] - 1 + paramInt10, j, paramArrayOfDouble3, i1 - 1 + paramInt12, 1);
     n = i1 + j;
-    for (i6 = paramInt1 - (i1 + j) + 1; i6 > 0; i6--)
+    for (int i6 = paramInt1 - (i1 + j) + 1; i6 > 0; i6--)
     {
       paramArrayOfDouble3[(n - 1 + paramInt12)] = 0.0D;
       n += 1;
     }
     i4 = (int)Math.pow(2, paramInt2) + 1;
     n = 1;
-    for (i6 = paramInt3 - 1 - 1 + 1; i6 > 0; i6--)
+    for (int i6 = paramInt3 - 1 - 1 + 1; i6 > 0; i6--)
     {
       k = i4 + paramInt4 * (int)Math.pow(2, paramInt3 - n) + (int)Math.pow(2, paramInt3 - n - 1) - 1;
       i2 = paramArrayOfInt1[(k + 1 - 1 + paramInt5)] - paramArrayOfInt1[(k - 1 + paramInt5)];
@@ -66,7 +66,7 @@ public final class Dlaeda
         m += 1;
       }
       m = paramArrayOfInt3[(k + 1 - 1 + paramInt7)];
-      for (i7 = paramArrayOfInt3[(k + 2 - 1 + paramInt7)] - 1 - paramArrayOfInt3[(k + 1 - 1 + paramInt7)] + 1; i7 > 0; i7--)
+      for (int i7 = paramArrayOfInt3[(k + 2 - 1 + paramInt7)] - 1 - paramArrayOfInt3[(k + 1 - 1 + paramInt7)] + 1; i7 > 0; i7--)
       {
         Drot.drot(1, paramArrayOfDouble3, i1 - 1 + paramArrayOfInt4[(1 - 1 + (m - 1) * 2 + paramInt8)] - 1 + paramInt12, 1, paramArrayOfDouble3, i1 - 1 + paramArrayOfInt4[(2 - 1 + (m - 1) * 2 + paramInt8)] - 1 + paramInt12, 1, paramArrayOfDouble1[(1 - 1 + (m - 1) * 2 + paramInt9)], paramArrayOfDouble1[(2 - 1 + (m - 1) * 2 + paramInt9)]);
         m += 1;
@@ -74,13 +74,13 @@ public final class Dlaeda
       i2 = paramArrayOfInt1[(k + 1 - 1 + paramInt5)] - paramArrayOfInt1[(k - 1 + paramInt5)];
       i3 = paramArrayOfInt1[(k + 2 - 1 + paramInt5)] - paramArrayOfInt1[(k + 1 - 1 + paramInt5)];
       m = 0;
-      for (i7 = i2 - 1 - 0 + 1; i7 > 0; i7--)
+      for (int i7 = i2 - 1 - 0 + 1; i7 > 0; i7--)
       {
         paramArrayOfDouble4[(m + 1 - 1 + paramInt13)] = paramArrayOfDouble3[(i5 + paramArrayOfInt2[(paramArrayOfInt1[(k - 1 + paramInt5)] + m - 1 + paramInt6)] - 1 - 1 + paramInt12)];
         m += 1;
       }
       m = 0;
-      for (i7 = i3 - 1 - 0 + 1; i7 > 0; i7--)
+      for (int i7 = i3 - 1 - 0 + 1; i7 > 0; i7--)
       {
         paramArrayOfDouble4[(i2 + m + 1 - 1 + paramInt13)] = paramArrayOfDouble3[(i1 + paramArrayOfInt2[(paramArrayOfInt1[(k + 1 - 1 + paramInt5)] + m - 1 + paramInt6)] - 1 - 1 + paramInt12)];
         m += 1;

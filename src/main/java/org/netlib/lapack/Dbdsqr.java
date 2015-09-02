@@ -130,7 +130,7 @@ public final class Dbdsqr
       if (bool)
       {
         j = 1;
-        for (i11 = paramInt1 - 1 - 1 + 1; i11 > 0; i11--)
+        for (int i11 = paramInt1 - 1 - 1 + 1; i11 > 0; i11--)
         {
           Dlartg.dlartg(paramArrayOfDouble1[(j - 1 + paramInt5)], paramArrayOfDouble2[(j - 1 + paramInt6)], localdoubleW3, localdoubleW12, localdoubleW6);
           paramArrayOfDouble1[(j - 1 + paramInt5)] = localdoubleW6.val;
@@ -151,13 +151,13 @@ public final class Dbdsqr
       d14 = d15 * d3;
       d9 = 0.0D;
       j = 1;
-      for (i11 = paramInt1 - 1 + 1; i11 > 0; i11--)
+      for (int i11 = paramInt1 - 1 + 1; i11 > 0; i11--)
       {
         d9 = Math.max(d9, Math.abs(paramArrayOfDouble1[(j - 1 + paramInt5)]));
         j += 1;
       }
       j = 1;
-      for (i11 = paramInt1 - 1 - 1 + 1; i11 > 0; i11--)
+      for (int i11 = paramInt1 - 1 - 1 + 1; i11 > 0; i11--)
       {
         d9 = Math.max(d9, Math.abs(paramArrayOfDouble2[(j - 1 + paramInt6)]));
         j += 1;
@@ -170,7 +170,7 @@ public final class Dbdsqr
         {
           d7 = d12;
           j = 2;
-          for (i11 = paramInt1 - 2 + 1; i11 > 0; i11--)
+          for (int i11 = paramInt1 - 2 + 1; i11 > 0; i11--)
           {
             d7 = Math.abs(paramArrayOfDouble1[(j - 1 + paramInt5)]) * (d7 / (d7 + Math.abs(paramArrayOfDouble2[(j - 1 - 1 + paramInt6)])));
             d12 = Math.min(d12, d7);
@@ -195,7 +195,16 @@ public final class Dbdsqr
       while ((i4 > 1 ? 0 : 1) == 0)
       {
         if ((n <= i5 ? 0 : 1) != 0) {
-          break label6111;
+          paramintW.val = 0;
+          j = 1;
+          for (int i11 = paramInt1 - 1 - 1 + 1; i11 > 0; i11--)
+          {
+            if ((paramArrayOfDouble2[(j - 1 + paramInt6)] == 0.0D ? 0 : 1) != 0) {
+              paramintW.val += 1;
+            }
+            j += 1;
+          }
+          return;
         }
         if ((d14 >= 0.0D ? 0 : 1) != 0) {}
         if (((Math.abs(paramArrayOfDouble1[(i4 - 1 + paramInt5)]) > d13 ? 0 : 1) != 0 ? 1 : 0) != 0) {
@@ -204,7 +213,7 @@ public final class Dbdsqr
         d9 = Math.abs(paramArrayOfDouble1[(i4 - 1 + paramInt5)]);
         d10 = d9;
         i3 = 1;
-        for (i11 = i4 - 1 - 1 + 1; i11 > 0; i11--)
+        for (int i11 = i4 - 1 - 1 + 1; i11 > 0; i11--)
         {
           i2 = i4 - i3;
           d2 = Math.abs(paramArrayOfDouble1[(i2 - 1 + paramInt5)]);
@@ -221,7 +230,6 @@ public final class Dbdsqr
           i3 += 1;
         }
         i2 = 0;
-        break label1674;
         paramArrayOfDouble2[(i2 - 1 + paramInt6)] = 0.0D;
         if ((i2 != i4 - 1 ? 0 : 1) != 0)
         {
@@ -273,7 +281,7 @@ public final class Dbdsqr
                 d7 = Math.abs(paramArrayOfDouble1[(i2 - 1 + paramInt5)]);
                 d11 = d7;
                 i3 = i2;
-                for (i11 = i4 - 1 - i2 + 1; i11 > 0; i11--)
+                for (int i11 = i4 - 1 - i2 + 1; i11 > 0; i11--)
                 {
                   if ((Math.abs(paramArrayOfDouble2[(i3 - 1 + paramInt6)]) > d14 * d7 ? 0 : 1) != 0)
                   {
@@ -301,7 +309,7 @@ public final class Dbdsqr
                 d7 = Math.abs(paramArrayOfDouble1[(i4 - 1 + paramInt5)]);
                 d11 = d7;
                 i3 = i4 - 1;
-                for (i11 = (i2 - (i4 - 1) + -1) / -1; i11 > 0; i11--)
+                for (int i11 = (i2 - (i4 - 1) + -1) / -1; i11 > 0; i11--)
                 {
                   if ((Math.abs(paramArrayOfDouble2[(i3 - 1 + paramInt6)]) > d14 * d7 ? 0 : 1) != 0)
                   {
@@ -347,7 +355,7 @@ public final class Dbdsqr
                 localdoubleW3.val = 1.0D;
                 localdoubleW4.val = 1.0D;
                 j = i2;
-                for (i11 = i4 - 1 - i2 + 1; i11 > 0; i11--)
+                for (int i11 = i4 - 1 - i2 + 1; i11 > 0; i11--)
                 {
                   Dlartg.dlartg(paramArrayOfDouble1[(j - 1 + paramInt5)] * localdoubleW3.val, paramArrayOfDouble2[(j - 1 + paramInt6)], localdoubleW3, localdoubleW12, localdoubleW6);
                   if ((j <= i2 ? 0 : 1) != 0) {
@@ -381,7 +389,7 @@ public final class Dbdsqr
                 localdoubleW3.val = 1.0D;
                 localdoubleW4.val = 1.0D;
                 j = i4;
-                for (i11 = (i2 + 1 - i4 + -1) / -1; i11 > 0; i11--)
+                for (int i11 = (i2 + 1 - i4 + -1) / -1; i11 > 0; i11--)
                 {
                   Dlartg.dlartg(paramArrayOfDouble1[(j - 1 + paramInt5)] * localdoubleW3.val, paramArrayOfDouble2[(j - 1 - 1 + paramInt6)], localdoubleW3, localdoubleW12, localdoubleW6);
                   if ((j >= i4 ? 0 : 1) != 0) {
@@ -416,7 +424,7 @@ public final class Dbdsqr
               d4 = (Math.abs(paramArrayOfDouble1[(i2 - 1 + paramInt5)]) - localdoubleW7.val) * (Util.dsign(1.0D, paramArrayOfDouble1[(i2 - 1 + paramInt5)]) + localdoubleW7.val / paramArrayOfDouble1[(i2 - 1 + paramInt5)]);
               d5 = paramArrayOfDouble2[(i2 - 1 + paramInt6)];
               j = i2;
-              for (i11 = i4 - 1 - i2 + 1; i11 > 0; i11--)
+              for (int i11 = i4 - 1 - i2 + 1; i11 > 0; i11--)
               {
                 Dlartg.dlartg(d4, d5, localdoubleW2, localdoubleW11, localdoubleW6);
                 if ((j <= i2 ? 0 : 1) != 0) {
@@ -460,7 +468,7 @@ public final class Dbdsqr
               d4 = (Math.abs(paramArrayOfDouble1[(i4 - 1 + paramInt5)]) - localdoubleW7.val) * (Util.dsign(1.0D, paramArrayOfDouble1[(i4 - 1 + paramInt5)]) + localdoubleW7.val / paramArrayOfDouble1[(i4 - 1 + paramInt5)]);
               d5 = paramArrayOfDouble2[(i4 - 1 - 1 + paramInt6)];
               j = i4;
-              for (i11 = (i2 + 1 - i4 + -1) / -1; i11 > 0; i11--)
+              for (int i11 = (i2 + 1 - i4 + -1) / -1; i11 > 0; i11--)
               {
                 Dlartg.dlartg(d4, d5, localdoubleW2, localdoubleW11, localdoubleW6);
                 if ((j >= i4 ? 0 : 1) != 0) {
@@ -516,7 +524,7 @@ public final class Dbdsqr
       j += 1;
     }
     j = 1;
-    for (i11 = paramInt1 - 1 - 1 + 1; i11 > 0; i11--)
+    for (int i11 = paramInt1 - 1 - 1 + 1; i11 > 0; i11--)
     {
       m = 1;
       d10 = paramArrayOfDouble1[(1 - 1 + paramInt5)];
@@ -547,16 +555,7 @@ public final class Dbdsqr
       j += 1;
     }
     return;
-    label6111:
-    paramintW.val = 0;
-    j = 1;
-    for (i11 = paramInt1 - 1 - 1 + 1; i11 > 0; i11--)
-    {
-      if ((paramArrayOfDouble2[(j - 1 + paramInt6)] == 0.0D ? 0 : 1) != 0) {
-        paramintW.val += 1;
-      }
-      j += 1;
-    }
+
   }
   
   private static void dlartg_adapter(double paramDouble1, double paramDouble2, doubleW paramdoubleW1, doubleW paramdoubleW2, double[] paramArrayOfDouble, int paramInt)

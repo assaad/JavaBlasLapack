@@ -94,7 +94,7 @@ public final class Sggsvp
     Slapmt.slapmt(bool1, paramInt1, paramInt3, paramArrayOfFloat1, paramInt4, paramInt5, paramArrayOfInt, paramInt14);
     paramintW2.val = 0;
     i = 1;
-    for (k = Math.min(paramInt2, paramInt3) - 1 + 1; k > 0; k--)
+    for (int k = Math.min(paramInt2, paramInt3) - 1 + 1; k > 0; k--)
     {
       if ((Math.abs(paramArrayOfFloat2[(i - 1 + (i - 1) * paramInt7 + paramInt6)]) <= paramFloat2 ? 0 : 1) != 0) {
         paramintW2.val += 1;
@@ -111,7 +111,7 @@ public final class Sggsvp
     }
     j = 1;
     int m;
-    for (k = paramintW2.val - 1 - 1 + 1; k > 0; k--)
+    for (int k = paramintW2.val - 1 - 1 + 1; k > 0; k--)
     {
       i = j + 1;
       for (m = paramintW2.val - (j + 1) + 1; m > 0; m--)
@@ -139,7 +139,7 @@ public final class Sggsvp
       }
       Slaset.slaset("Full", paramintW2.val, paramInt3 - paramintW2.val, 0.0F, 0.0F, paramArrayOfFloat2, paramInt6, paramInt7);
       j = paramInt3 - paramintW2.val + 1;
-      for (k = paramInt3 - (paramInt3 - paramintW2.val + 1) + 1; k > 0; k--)
+      for (int k = paramInt3 - (paramInt3 - paramintW2.val + 1) + 1; k > 0; k--)
       {
         i = j - paramInt3 + paramintW2.val + 1;
         for (m = paramintW2.val - (j - paramInt3 + paramintW2.val + 1) + 1; m > 0; m--)
@@ -151,7 +151,7 @@ public final class Sggsvp
       }
     }
     i = 1;
-    for (k = paramInt3 - paramintW2.val - 1 + 1; k > 0; k--)
+    for (int k = paramInt3 - paramintW2.val - 1 + 1; k > 0; k--)
     {
       paramArrayOfInt[(i - 1 + paramInt14)] = 0;
       i += 1;
@@ -159,7 +159,7 @@ public final class Sggsvp
     Sgeqpf.sgeqpf(paramInt1, paramInt3 - paramintW2.val, paramArrayOfFloat1, paramInt4, paramInt5, paramArrayOfInt, paramInt14, paramArrayOfFloat6, paramInt15, paramArrayOfFloat7, paramInt16, paramintW3);
     paramintW1.val = 0;
     i = 1;
-    for (k = Math.min(paramInt1, paramInt3 - paramintW2.val) - 1 + 1; k > 0; k--)
+    for (int k = Math.min(paramInt1, paramInt3 - paramintW2.val) - 1 + 1; k > 0; k--)
     {
       if ((Math.abs(paramArrayOfFloat1[(i - 1 + (i - 1) * paramInt5 + paramInt4)]) <= paramFloat1 ? 0 : 1) != 0) {
         paramintW1.val += 1;
@@ -179,7 +179,7 @@ public final class Sggsvp
       Slapmt.slapmt(bool1, paramInt3, paramInt3 - paramintW2.val, paramArrayOfFloat5, paramInt12, paramInt13, paramArrayOfInt, paramInt14);
     }
     j = 1;
-    for (k = paramintW1.val - 1 - 1 + 1; k > 0; k--)
+    for (int k = paramintW1.val - 1 - 1 + 1; k > 0; k--)
     {
       i = j + 1;
       for (m = paramintW1.val - (j + 1) + 1; m > 0; m--)
@@ -200,7 +200,7 @@ public final class Sggsvp
       }
       Slaset.slaset("Full", paramintW1.val, paramInt3 - paramintW2.val - paramintW1.val, 0.0F, 0.0F, paramArrayOfFloat1, paramInt4, paramInt5);
       j = paramInt3 - paramintW2.val - paramintW1.val + 1;
-      for (k = paramInt3 - paramintW2.val - (paramInt3 - paramintW2.val - paramintW1.val + 1) + 1; k > 0; k--)
+      for (int k = paramInt3 - paramintW2.val - (paramInt3 - paramintW2.val - paramintW1.val + 1) + 1; k > 0; k--)
       {
         i = j - paramInt3 + paramintW2.val + paramintW1.val + 1;
         for (m = paramintW1.val - (j - paramInt3 + paramintW2.val + paramintW1.val + 1) + 1; m > 0; m--)
@@ -218,7 +218,7 @@ public final class Sggsvp
         Sorm2r.sorm2r("Right", "No transpose", paramInt1, paramInt1 - paramintW1.val, Math.min(paramInt1 - paramintW1.val, paramintW2.val), paramArrayOfFloat1, paramintW1.val + 1 - 1 + (paramInt3 - paramintW2.val + 1 - 1) * paramInt5 + paramInt4, paramInt5, paramArrayOfFloat6, paramInt15, paramArrayOfFloat3, 1 - 1 + (paramintW1.val + 1 - 1) * paramInt9 + paramInt8, paramInt9, paramArrayOfFloat7, paramInt16, paramintW3);
       }
       j = paramInt3 - paramintW2.val + 1;
-      for (k = paramInt3 - (paramInt3 - paramintW2.val + 1) + 1; k > 0; k--)
+      for (int k = paramInt3 - (paramInt3 - paramintW2.val + 1) + 1; k > 0; k--)
       {
         i = j - paramInt3 + paramintW1.val + paramintW2.val + 1;
         for (m = paramInt1 - (j - paramInt3 + paramintW1.val + paramintW2.val + 1) + 1; m > 0; m--)

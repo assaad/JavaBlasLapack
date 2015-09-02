@@ -247,21 +247,21 @@ public final class Dtgsyl
                 i6 += 1;
               }
               i6 = i5;
-              for (i15 = i4 - i5 + 1; i15 > 0; i15--)
+              for (int i15 = i4 - i5 + 1; i15 > 0; i15--)
               {
                 Dscal.dscal(i1 - 1, localdoubleW3.val, paramArrayOfDouble3, 1 - 1 + (i6 - 1) * paramInt9 + paramInt8, 1);
                 Dscal.dscal(i1 - 1, localdoubleW3.val, paramArrayOfDouble6, 1 - 1 + (i6 - 1) * paramInt15 + paramInt14, 1);
                 i6 += 1;
               }
               i6 = i5;
-              for (i15 = i4 - i5 + 1; i15 > 0; i15--)
+              for (int i15 = i4 - i5 + 1; i15 > 0; i15--)
               {
                 Dscal.dscal(paramInt2 - k, localdoubleW3.val, paramArrayOfDouble3, k + 1 - 1 + (i6 - 1) * paramInt9 + paramInt8, 1);
                 Dscal.dscal(paramInt2 - k, localdoubleW3.val, paramArrayOfDouble6, k + 1 - 1 + (i6 - 1) * paramInt15 + paramInt14, 1);
                 i6 += 1;
               }
               i6 = i4 + 1;
-              for (i15 = paramInt3 - (i4 + 1) + 1; i15 > 0; i15--)
+              for (int i15 = paramInt3 - (i4 + 1) + 1; i15 > 0; i15--)
               {
                 Dscal.dscal(paramInt2, localdoubleW3.val, paramArrayOfDouble3, 1 - 1 + (i6 - 1) * paramInt9 + paramInt8, 1);
                 Dscal.dscal(paramInt2, localdoubleW3.val, paramArrayOfDouble6, 1 - 1 + (i6 - 1) * paramInt15 + paramInt14, 1);

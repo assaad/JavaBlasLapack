@@ -35,7 +35,7 @@ public final class Dpttrf
       i += 1;
     }
     i = j + 1;
-    for (k = (paramInt1 - 4 - (j + 1) + 4) / 4; k > 0; k--)
+    for (int k = (paramInt1 - 4 - (j + 1) + 4) / 4; k > 0; k--)
     {
       if ((paramArrayOfDouble1[(i - 1 + paramInt2)] > 0.0D ? 0 : 1) != 0)
       {

@@ -48,7 +48,7 @@ public final class Dgtrfs
     if (((paramInt2 != 0 ? 0 : 1) == 0 ? 0 : 1) != 0)
     {
       k = 1;
-      for (n = paramInt2 - 1 + 1; n > 0; n--)
+      for (int n = paramInt2 - 1 + 1; n > 0; n--)
       {
         paramArrayOfDouble10[(k - 1 + paramInt15)] = 0.0D;
         paramArrayOfDouble11[(k - 1 + paramInt16)] = 0.0D;
@@ -90,7 +90,7 @@ public final class Dgtrfs
           {
             paramArrayOfDouble12[(1 - 1 + paramInt17)] = (Math.abs(paramArrayOfDouble8[(1 - 1 + (k - 1) * paramInt12 + paramInt11)]) + Math.abs(paramArrayOfDouble2[(1 - 1 + paramInt4)] * paramArrayOfDouble9[(1 - 1 + (k - 1) * paramInt14 + paramInt13)]) + Math.abs(paramArrayOfDouble3[(1 - 1 + paramInt5)] * paramArrayOfDouble9[(2 - 1 + (k - 1) * paramInt14 + paramInt13)]));
             j = 2;
-            for (i1 = paramInt1 - 1 - 2 + 1; i1 > 0; i1--)
+            for (int i1 = paramInt1 - 1 - 2 + 1; i1 > 0; i1--)
             {
               paramArrayOfDouble12[(j - 1 + paramInt17)] = (Math.abs(paramArrayOfDouble8[(j - 1 + (k - 1) * paramInt12 + paramInt11)]) + Math.abs(paramArrayOfDouble1[(j - 1 - 1 + paramInt3)] * paramArrayOfDouble9[(j - 1 - 1 + (k - 1) * paramInt14 + paramInt13)]) + Math.abs(paramArrayOfDouble2[(j - 1 + paramInt4)] * paramArrayOfDouble9[(j - 1 + (k - 1) * paramInt14 + paramInt13)]) + Math.abs(paramArrayOfDouble3[(j - 1 + paramInt5)] * paramArrayOfDouble9[(j + 1 - 1 + (k - 1) * paramInt14 + paramInt13)]));
               j += 1;
@@ -106,7 +106,7 @@ public final class Dgtrfs
         {
           paramArrayOfDouble12[(1 - 1 + paramInt17)] = (Math.abs(paramArrayOfDouble8[(1 - 1 + (k - 1) * paramInt12 + paramInt11)]) + Math.abs(paramArrayOfDouble2[(1 - 1 + paramInt4)] * paramArrayOfDouble9[(1 - 1 + (k - 1) * paramInt14 + paramInt13)]) + Math.abs(paramArrayOfDouble1[(1 - 1 + paramInt3)] * paramArrayOfDouble9[(2 - 1 + (k - 1) * paramInt14 + paramInt13)]));
           j = 2;
-          for (i1 = paramInt1 - 1 - 2 + 1; i1 > 0; i1--)
+          for (int i1 = paramInt1 - 1 - 2 + 1; i1 > 0; i1--)
           {
             paramArrayOfDouble12[(j - 1 + paramInt17)] = (Math.abs(paramArrayOfDouble8[(j - 1 + (k - 1) * paramInt12 + paramInt11)]) + Math.abs(paramArrayOfDouble3[(j - 1 - 1 + paramInt5)] * paramArrayOfDouble9[(j - 1 - 1 + (k - 1) * paramInt14 + paramInt13)]) + Math.abs(paramArrayOfDouble2[(j - 1 + paramInt4)] * paramArrayOfDouble9[(j - 1 + (k - 1) * paramInt14 + paramInt13)]) + Math.abs(paramArrayOfDouble1[(j - 1 + paramInt3)] * paramArrayOfDouble9[(j + 1 - 1 + (k - 1) * paramInt14 + paramInt13)]));
             j += 1;
@@ -115,7 +115,7 @@ public final class Dgtrfs
         }
         d3 = 0.0D;
         j = 1;
-        for (i1 = paramInt1 - 1 + 1; i1 > 0; i1--)
+        for (int i1 = paramInt1 - 1 + 1; i1 > 0; i1--)
         {
           if ((paramArrayOfDouble12[(j - 1 + paramInt17)] <= d5 ? 0 : 1) != 0) {
             d3 = Math.max(d3, Math.abs(paramArrayOfDouble12[(paramInt1 + j - 1 + paramInt17)]) / paramArrayOfDouble12[(j - 1 + paramInt17)]);
@@ -156,7 +156,7 @@ public final class Dgtrfs
         {
           Dgttrs.dgttrs(str2, paramInt1, 1, paramArrayOfDouble4, paramInt6, paramArrayOfDouble5, paramInt7, paramArrayOfDouble6, paramInt8, paramArrayOfDouble7, paramInt9, paramArrayOfInt1, paramInt10, paramArrayOfDouble12, paramInt1 + 1 - 1 + paramInt17, paramInt1, paramintW);
           j = 1;
-          for (i1 = paramInt1 - 1 + 1; i1 > 0; i1--)
+          for (int i1 = paramInt1 - 1 + 1; i1 > 0; i1--)
           {
             paramArrayOfDouble12[(paramInt1 + j - 1 + paramInt17)] = (paramArrayOfDouble12[(j - 1 + paramInt17)] * paramArrayOfDouble12[(paramInt1 + j - 1 + paramInt17)]);
             j += 1;
@@ -165,7 +165,7 @@ public final class Dgtrfs
         else
         {
           j = 1;
-          for (i1 = paramInt1 - 1 + 1; i1 > 0; i1--)
+          for (int i1 = paramInt1 - 1 + 1; i1 > 0; i1--)
           {
             paramArrayOfDouble12[(paramInt1 + j - 1 + paramInt17)] = (paramArrayOfDouble12[(j - 1 + paramInt17)] * paramArrayOfDouble12[(paramInt1 + j - 1 + paramInt17)]);
             j += 1;
@@ -175,7 +175,7 @@ public final class Dgtrfs
       }
       d2 = 0.0D;
       j = 1;
-      for (i1 = paramInt1 - 1 + 1; i1 > 0; i1--)
+      for (int i1 = paramInt1 - 1 + 1; i1 > 0; i1--)
       {
         d2 = Math.max(d2, Math.abs(paramArrayOfDouble9[(j - 1 + (k - 1) * paramInt14 + paramInt13)]));
         j += 1;

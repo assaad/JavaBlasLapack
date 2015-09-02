@@ -50,7 +50,7 @@ public final class Dpprfs
     if (((paramInt2 != 0 ? 0 : 1) == 0 ? 0 : 1) != 0)
     {
       m = 1;
-      for (i3 = paramInt2 - 1 + 1; i3 > 0; i3--)
+      for (int i3 = paramInt2 - 1 + 1; i3 > 0; i3--)
       {
         paramArrayOfDouble5[(m - 1 + paramInt9)] = 0.0D;
         paramArrayOfDouble6[(m - 1 + paramInt10)] = 0.0D;
@@ -73,7 +73,7 @@ public final class Dpprfs
         Dcopy.dcopy(paramInt1, paramArrayOfDouble3, 1 - 1 + (m - 1) * paramInt6 + paramInt5, 1, paramArrayOfDouble7, paramInt1 + 1 - 1 + paramInt11, 1);
         Dspmv.dspmv(paramString, paramInt1, -1.0D, paramArrayOfDouble1, paramInt3, paramArrayOfDouble4, 1 - 1 + (m - 1) * paramInt8 + paramInt7, 1, 1.0D, paramArrayOfDouble7, paramInt1 + 1 - 1 + paramInt11, 1);
         j = 1;
-        for (i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
+        for (int i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
         {
           paramArrayOfDouble7[(j - 1 + paramInt11)] = Math.abs(paramArrayOfDouble3[(j - 1 + (m - 1) * paramInt6 + paramInt5)]);
           j += 1;
@@ -83,7 +83,7 @@ public final class Dpprfs
         if (bool)
         {
           n = 1;
-          for (i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
+          for (int i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
           {
             d3 = 0.0D;
             d7 = Math.abs(paramArrayOfDouble4[(n - 1 + (m - 1) * paramInt8 + paramInt7)]);
@@ -104,7 +104,7 @@ public final class Dpprfs
         else
         {
           n = 1;
-          for (i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
+          for (int i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
           {
             d3 = 0.0D;
             d7 = Math.abs(paramArrayOfDouble4[(n - 1 + (m - 1) * paramInt8 + paramInt7)]);
@@ -125,7 +125,7 @@ public final class Dpprfs
         }
         d3 = 0.0D;
         j = 1;
-        for (i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
+        for (int i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
         {
           if ((paramArrayOfDouble7[(j - 1 + paramInt11)] <= d5 ? 0 : 1) != 0) {
             d3 = Math.max(d3, Math.abs(paramArrayOfDouble7[(paramInt1 + j - 1 + paramInt11)]) / paramArrayOfDouble7[(j - 1 + paramInt11)]);
@@ -166,7 +166,7 @@ public final class Dpprfs
         {
           Dpptrs.dpptrs(paramString, paramInt1, 1, paramArrayOfDouble2, paramInt4, paramArrayOfDouble7, paramInt1 + 1 - 1 + paramInt11, paramInt1, paramintW);
           j = 1;
-          for (i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
+          for (int i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
           {
             paramArrayOfDouble7[(paramInt1 + j - 1 + paramInt11)] = (paramArrayOfDouble7[(j - 1 + paramInt11)] * paramArrayOfDouble7[(paramInt1 + j - 1 + paramInt11)]);
             j += 1;
@@ -175,7 +175,7 @@ public final class Dpprfs
         else if ((localintW.val != 2 ? 0 : 1) != 0)
         {
           j = 1;
-          for (i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
+          for (int i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
           {
             paramArrayOfDouble7[(paramInt1 + j - 1 + paramInt11)] = (paramArrayOfDouble7[(j - 1 + paramInt11)] * paramArrayOfDouble7[(paramInt1 + j - 1 + paramInt11)]);
             j += 1;
@@ -185,7 +185,7 @@ public final class Dpprfs
       }
       d2 = 0.0D;
       j = 1;
-      for (i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
+      for (int i4 = paramInt1 - 1 + 1; i4 > 0; i4--)
       {
         d2 = Math.max(d2, Math.abs(paramArrayOfDouble4[(j - 1 + (m - 1) * paramInt8 + paramInt7)]));
         j += 1;

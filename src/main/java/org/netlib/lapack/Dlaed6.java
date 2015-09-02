@@ -132,7 +132,7 @@ public final class Dlaed6
         d13 = d14;
       }
       j = 1;
-      for (n = 3 - 1 + 1; n > 0; n--)
+      for (int n = 3 - 1 + 1; n > 0; n--)
       {
         arrayOfDouble1[(j - 1)] = (paramArrayOfDouble1[(j - 1 + paramInt2)] * d12);
         arrayOfDouble2[(j - 1)] = (paramArrayOfDouble2[(j - 1 + paramInt3)] * d12);
@@ -145,7 +145,7 @@ public final class Dlaed6
     else
     {
       j = 1;
-      for (n = 3 - 1 + 1; n > 0; n--)
+      for (int n = 3 - 1 + 1; n > 0; n--)
       {
         arrayOfDouble1[(j - 1)] = paramArrayOfDouble1[(j - 1 + paramInt2)];
         arrayOfDouble2[(j - 1)] = paramArrayOfDouble2[(j - 1 + paramInt3)];
@@ -177,7 +177,7 @@ public final class Dlaed6
       }
       k = m + 1;
       m = k;
-      for (n = 40 - k + 1; n > 0; n--)
+      for (int n = 40 - k + 1; n > 0; n--)
       {
         if (paramBoolean)
         {

@@ -25,7 +25,7 @@ public final class Iswap
         m = (-paramInt1 + 1) * paramInt5 + 1;
       }
       j = 1;
-      for (i2 = paramInt1 - 1 + 1; i2 > 0; i2--)
+      for (int i2 = paramInt1 - 1 + 1; i2 > 0; i2--)
       {
         i = paramArrayOfInt1[(k - 1 + paramInt2)];
         paramArrayOfInt1[(k - 1 + paramInt2)] = paramArrayOfInt2[(m - 1 + paramInt4)];
@@ -40,7 +40,7 @@ public final class Iswap
     if ((n != 0 ? 0 : 1) == 0)
     {
       j = 1;
-      for (i2 = n - 1 + 1; i2 > 0; i2--)
+      for (int i2 = n - 1 + 1; i2 > 0; i2--)
       {
         i = paramArrayOfInt1[(j - 1 + paramInt2)];
         paramArrayOfInt1[(j - 1 + paramInt2)] = paramArrayOfInt2[(j - 1 + paramInt4)];

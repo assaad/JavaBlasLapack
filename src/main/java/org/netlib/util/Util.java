@@ -7,8 +7,6 @@
 /*     */ import java.io.PrintStream;
 /*     */ import java.util.Enumeration;
 /*     */ import java.util.Vector;
-/*     */ import org.j_paine.formatter.EndOfFileWhenStartingReadException;
-/*     */ import org.j_paine.formatter.Formatter;
 /*     */ 
 /*     */ 
 /*     */ 
@@ -420,26 +418,7 @@
 /*     */ 
 /*     */   public static void f77write(String paramString, Vector paramVector)
 /*     */   {
-/* 423 */     if (paramString == null) {
-/* 424 */       f77write(paramVector);
-/* 425 */       return;
-/*     */     }
-/*     */     try
-/*     */     {
-/* 429 */       Formatter localFormatter = new Formatter(paramString);
-/* 430 */       localObject = processVector(paramVector);
-/* 431 */       localFormatter.write((Vector)localObject, System.out);
-/* 432 */       System.out.println();
-/*     */     }
-/*     */     catch (Exception localException) {
-/* 435 */       Object localObject = localException.getMessage();
-/*     */       
-/* 437 */       if (localObject != null) {
-/* 438 */         System.out.println((String)localObject);
-/*     */       } else {
-/* 440 */         System.out.println();
-/*     */       }
-/*     */     }
+    // todo to reimplemt
 /*     */   }
 /*     */   
 /*     */ 
@@ -496,31 +475,7 @@
 /*     */ 
 /*     */ 
 /*     */ 
-/*     */ 
-/*     */   public static int f77read(String paramString, Vector paramVector)
-/*     */   {
-/*     */     try
-/*     */     {
-/* 504 */       Formatter localFormatter = new Formatter(paramString);
-/* 505 */       localFormatter.read(paramVector, new DataInputStream(System.in));
-/*     */     }
-/*     */     catch (EndOfFileWhenStartingReadException localEndOfFileWhenStartingReadException) {
-/* 508 */       return 0;
-/*     */     }
-/*     */     catch (Exception localException) {
-/* 511 */       String str = localException.getMessage();
-/*     */       
-/* 513 */       if (str != null) {
-/* 514 */         System.out.println(str);
-/*     */       } else {
-/* 516 */         System.out.println("Warning: READ exception.");
-/*     */       }
-/* 518 */       return -1;
-/*     */     }
-/*     */     
-/* 521 */     return paramVector.size();
-/*     */   }
-/*     */   
+/*     */
 /*     */ 
 /*     */ 
 /*     */ 

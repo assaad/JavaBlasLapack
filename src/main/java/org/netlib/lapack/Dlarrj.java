@@ -121,7 +121,7 @@ public final class Dlarrj
       k = m;
       i7 = i6;
       i8 = 1;
-      for (i11 = i7 - 1 + 1; i11 > 0; i11--)
+      for (int i11 = i7 - 1 + 1; i11 > 0; i11--)
       {
         i4 = 2 * k;
         i1 = k - paramInt6;
@@ -174,7 +174,7 @@ public final class Dlarrj
       if ((i6 <= 0 ? 0 : 1) == 0) {}
     } while (((i2 > i ? 0 : 1) != 0 ? 1 : 0) != 0);
     k = i10;
-    for (i11 = paramInt5 - i10 + 1; i11 > 0; i11--)
+    for (int i11 = paramInt5 - i10 + 1; i11 > 0; i11--)
     {
       i4 = 2 * k;
       i1 = k - paramInt6;

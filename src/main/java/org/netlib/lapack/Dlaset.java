@@ -10,7 +10,7 @@ public final class Dlaset
     if (Lsame.lsame(paramString, "U"))
     {
       j = 2;
-      for (k = paramInt2 - 2 + 1; k > 0; k--)
+      for (int k = paramInt2 - 2 + 1; k > 0; k--)
       {
         i = 1;
         for (m = Math.min(j - 1, paramInt1) - 1 + 1; m > 0; m--)
@@ -24,7 +24,7 @@ public final class Dlaset
     else if (Lsame.lsame(paramString, "L"))
     {
       j = 1;
-      for (k = Math.min(paramInt1, paramInt2) - 1 + 1; k > 0; k--)
+      for (int k = Math.min(paramInt1, paramInt2) - 1 + 1; k > 0; k--)
       {
         i = j + 1;
         for (m = paramInt1 - (j + 1) + 1; m > 0; m--)
@@ -38,7 +38,7 @@ public final class Dlaset
     else
     {
       j = 1;
-      for (k = paramInt2 - 1 + 1; k > 0; k--)
+      for (int k = paramInt2 - 1 + 1; k > 0; k--)
       {
         i = 1;
         for (m = paramInt1 - 1 + 1; m > 0; m--)

@@ -42,14 +42,14 @@ public final class Sptcon
     }
     paramArrayOfFloat3[(1 - 1 + paramInt4)] = 1.0F;
     i = 2;
-    for (k = paramInt1 - 2 + 1; k > 0; k--)
+    for (int k = paramInt1 - 2 + 1; k > 0; k--)
     {
       paramArrayOfFloat3[(i - 1 + paramInt4)] = (1.0F + paramArrayOfFloat3[(i - 1 - 1 + paramInt4)] * Math.abs(paramArrayOfFloat2[(i - 1 - 1 + paramInt3)]));
       i += 1;
     }
     paramArrayOfFloat3[(paramInt1 - 1 + paramInt4)] /= paramArrayOfFloat1[(paramInt1 - 1 + paramInt2)];
     i = paramInt1 - 1;
-    for (k = (1 - (paramInt1 - 1) + -1) / -1; k > 0; k--)
+    for (int k = (1 - (paramInt1 - 1) + -1) / -1; k > 0; k--)
     {
       paramArrayOfFloat3[(i - 1 + paramInt4)] = (paramArrayOfFloat3[(i - 1 + paramInt4)] / paramArrayOfFloat1[(i - 1 + paramInt2)] + paramArrayOfFloat3[(i + 1 - 1 + paramInt4)] * Math.abs(paramArrayOfFloat2[(i - 1 + paramInt3)]));
       i += -1;

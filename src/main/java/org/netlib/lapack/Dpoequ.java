@@ -41,7 +41,7 @@ public final class Dpoequ
     if ((d > 0.0D ? 0 : 1) != 0)
     {
       i = 1;
-      for (j = paramInt1 - 1 + 1; j > 0; j--)
+      for (int j = paramInt1 - 1 + 1; j > 0; j--)
       {
         if ((paramArrayOfDouble2[(i - 1 + paramInt4)] > 0.0D ? 0 : 1) != 0)
         {
@@ -54,7 +54,7 @@ public final class Dpoequ
     else
     {
       i = 1;
-      for (j = paramInt1 - 1 + 1; j > 0; j--)
+      for (int j = paramInt1 - 1 + 1; j > 0; j--)
       {
         paramArrayOfDouble2[(i - 1 + paramInt4)] = (1.0D / Math.sqrt(paramArrayOfDouble2[(i - 1 + paramInt4)]));
         i += 1;

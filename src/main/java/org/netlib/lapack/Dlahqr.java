@@ -90,7 +90,7 @@ public final class Dlahqr
         break;
       }
       m = 0;
-      for (i7 = 30 - 0 + 1; i7 > 0; i7--)
+      for (int i7 = 30 - 0 + 1; i7 > 0; i7--)
       {
         i1 = i;
         for (int i8 = (i2 + 1 - i + -1) / -1; i8 > 0; i8--)
@@ -191,7 +191,7 @@ public final class Dlahqr
           }
         }
         i3 = i - 2;
-        for (i8 = (i2 - (i - 2) + -1) / -1; i8 > 0; i8--)
+        for (int i8 = (i2 - (i - 2) + -1) / -1; i8 > 0; i8--)
         {
           d9 = paramArrayOfDouble1[(i3 + 1 - 1 + (i3 - 1) * paramInt5 + paramInt4)];
           d16 = Math.abs(paramArrayOfDouble1[(i3 - 1 + (i3 - 1) * paramInt5 + paramInt4)] - d14) + Math.abs(d13) + Math.abs(d9);
@@ -212,7 +212,7 @@ public final class Dlahqr
           i3 += -1;
         }
         i1 = i3;
-        for (i8 = i - 1 - i3 + 1; i8 > 0; i8--)
+        for (int i8 = i - 1 - i3 + 1; i8 > 0; i8--)
         {
           i5 = Math.min(3, i - i1 + 1);
           if ((i1 <= i3 ? 0 : 1) != 0) {

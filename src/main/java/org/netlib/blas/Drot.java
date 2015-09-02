@@ -23,7 +23,7 @@ public final class Drot
         k = (-paramInt1 + 1) * paramInt5 + 1;
       }
       i = 1;
-      for (m = paramInt1 - 1 + 1; m > 0; m--)
+      for (int m = paramInt1 - 1 + 1; m > 0; m--)
       {
         d = paramDouble1 * paramArrayOfDouble1[(j - 1 + paramInt2)] + paramDouble2 * paramArrayOfDouble2[(k - 1 + paramInt4)];
         paramArrayOfDouble2[(k - 1 + paramInt4)] = (paramDouble1 * paramArrayOfDouble2[(k - 1 + paramInt4)] - paramDouble2 * paramArrayOfDouble1[(j - 1 + paramInt2)]);

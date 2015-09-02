@@ -219,7 +219,7 @@ public final class Dlarrd
     i20 = 0;
     i14 = 1;
     int i22;
-    for (i21 = paramInt8 - 1 + 1; i21 > 0; i21--)
+    for (int i21 = paramInt8 - 1 + 1; i21 > 0; i21--)
     {
       i6 = i4;
       n = i6 + 1;
@@ -332,7 +332,7 @@ public final class Dlarrd
       {
         localintW2.val = 0;
         i16 = 1;
-        for (i21 = paramintW1.val - 1 + 1; i21 > 0; i21--)
+        for (int i21 = paramintW1.val - 1 + 1; i21 > 0; i21--)
         {
           if ((paramArrayOfDouble5[(i16 - 1 + paramInt10)] > d12 ? 0 : 1) != 0) {}
           if (((i1 <= 0 ? 0 : 1) != 0 ? 1 : 0) != 0)
@@ -355,7 +355,7 @@ public final class Dlarrd
       {
         paramintW1.val += 1;
         i16 = paramintW1.val;
-        for (i21 = (1 - paramintW1.val + -1) / -1; i21 > 0; i21--)
+        for (int i21 = (1 - paramintW1.val + -1) / -1; i21 > 0; i21--)
         {
           if ((paramArrayOfDouble5[(i16 - 1 + paramInt10)] < d13 ? 0 : 1) != 0) {}
           if (((i2 <= 0 ? 0 : 1) != 0 ? 1 : 0) != 0)
@@ -374,7 +374,7 @@ public final class Dlarrd
         }
         i17 = 0;
         i16 = localintW2.val;
-        for (i21 = paramintW1.val - localintW2.val + 1; i21 > 0; i21--)
+        for (int i21 = paramintW1.val - localintW2.val + 1; i21 > 0; i21--)
         {
           i17 += 1;
           paramArrayOfDouble5[(i17 - 1 + paramInt10)] = paramArrayOfDouble5[(i16 - 1 + paramInt10)];
@@ -392,7 +392,7 @@ public final class Dlarrd
         {
           d11 = paramdoubleW2.val;
           i15 = 1;
-          for (i21 = i1 - 1 + 1; i21 > 0; i21--)
+          for (int i21 = i1 - 1 + 1; i21 > 0; i21--)
           {
             i11 = 0;
             i16 = 1;
@@ -416,7 +416,7 @@ public final class Dlarrd
         {
           d11 = paramdoubleW1.val;
           i15 = 1;
-          for (i21 = i2 - 1 + 1; i21 > 0; i21--)
+          for (int i21 = i2 - 1 + 1; i21 > 0; i21--)
           {
             i11 = 0;
             i16 = 1;
@@ -438,7 +438,7 @@ public final class Dlarrd
         }
         localintW2.val = 0;
         i16 = 1;
-        for (i21 = paramintW1.val - 1 + 1; i21 > 0; i21--)
+        for (int i21 = paramintW1.val - 1 + 1; i21 > 0; i21--)
         {
           if ((paramArrayOfInt2[(i16 - 1 + paramInt12)] == 0 ? 0 : 1) != 0)
           {
@@ -468,7 +468,7 @@ public final class Dlarrd
     if (((paramInt8 <= 1 ? 0 : 1) != 0 ? 1 : 0) != 0)
     {
       i16 = 1;
-      for (i21 = paramintW1.val - 1 - 1 + 1; i21 > 0; i21--)
+      for (int i21 = paramintW1.val - 1 - 1 + 1; i21 > 0; i21--)
       {
         i3 = 0;
         d7 = paramArrayOfDouble5[(i16 - 1 + paramInt10)];

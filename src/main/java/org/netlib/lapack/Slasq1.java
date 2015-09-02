@@ -53,7 +53,7 @@ public final class Slasq1
       return;
     }
     i = 1;
-    for (j = paramInt1 - 1 + 1; j > 0; j--)
+    for (int j = paramInt1 - 1 + 1; j > 0; j--)
     {
       localfloatW2.val = Math.max(localfloatW2.val, paramArrayOfFloat1[(i - 1 + paramInt2)]);
       i += 1;
@@ -65,7 +65,7 @@ public final class Slasq1
     Scopy.scopy(paramInt1 - 1, paramArrayOfFloat2, paramInt3, 1, paramArrayOfFloat3, 2 - 1 + paramInt4, 2);
     Slascl.slascl("G", 0, 0, localfloatW2.val, f2, 2 * paramInt1 - 1, 1, paramArrayOfFloat3, paramInt4, 2 * paramInt1 - 1, localintW);
     i = 1;
-    for (j = 2 * paramInt1 - 1 - 1 + 1; j > 0; j--)
+    for (int j = 2 * paramInt1 - 1 - 1 + 1; j > 0; j--)
     {
       paramArrayOfFloat3[(i - 1 + paramInt4)] = ((float)Math.pow(paramArrayOfFloat3[(i - 1 + paramInt4)], 2));
       i += 1;
@@ -75,7 +75,7 @@ public final class Slasq1
     if ((paramintW.val != 0 ? 0 : 1) != 0)
     {
       i = 1;
-      for (j = paramInt1 - 1 + 1; j > 0; j--)
+      for (int j = paramInt1 - 1 + 1; j > 0; j--)
       {
         paramArrayOfFloat1[(i - 1 + paramInt2)] = ((float)Math.sqrt(paramArrayOfFloat3[(i - 1 + paramInt4)]));
         i += 1;

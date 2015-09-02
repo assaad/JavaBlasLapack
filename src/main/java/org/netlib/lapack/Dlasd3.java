@@ -74,7 +74,7 @@ public final class Dlasd3
       else
       {
         j = 1;
-        for (i6 = i2 - 1 + 1; i6 > 0; i6--)
+        for (int i6 = i2 - 1 + 1; i6 > 0; i6--)
         {
           paramArrayOfDouble4[(j - 1 + (1 - 1) * paramInt10 + paramInt9)] = (-paramArrayOfDouble5[(j - 1 + (1 - 1) * paramInt12 + paramInt11)]);
           j += 1;
@@ -93,7 +93,7 @@ public final class Dlasd3
     Dlascl.dlascl("G", 0, 0, d1, 1.0D, paramInt4, 1, paramArrayOfDouble8, paramInt19, paramInt4, paramintW);
     d1 *= d1;
     k = 1;
-    for (i6 = paramInt4 - 1 + 1; i6 > 0; i6--)
+    for (int i6 = paramInt4 - 1 + 1; i6 > 0; i6--)
     {
       dlasd4_adapter(paramInt4, k, paramArrayOfDouble3, paramInt8, paramArrayOfDouble8, paramInt19, paramArrayOfDouble4, 1 - 1 + (k - 1) * paramInt10 + paramInt9, d1, paramArrayOfDouble1, k - 1 + paramInt5, paramArrayOfDouble6, 1 - 1 + (k - 1) * paramInt14 + paramInt13, paramintW);
       if ((paramintW.val == 0 ? 0 : 1) != 0) {
@@ -103,7 +103,7 @@ public final class Dlasd3
     }
     j = 1;
     int i7;
-    for (i6 = paramInt4 - 1 + 1; i6 > 0; i6--)
+    for (int i6 = paramInt4 - 1 + 1; i6 > 0; i6--)
     {
       paramArrayOfDouble8[(j - 1 + paramInt19)] = (paramArrayOfDouble4[(j - 1 + (paramInt4 - 1) * paramInt10 + paramInt9)] * paramArrayOfDouble6[(j - 1 + (paramInt4 - 1) * paramInt14 + paramInt13)]);
       k = 1;
@@ -122,7 +122,7 @@ public final class Dlasd3
       j += 1;
     }
     j = 1;
-    for (i6 = paramInt4 - 1 + 1; i6 > 0; i6--)
+    for (int i6 = paramInt4 - 1 + 1; i6 > 0; i6--)
     {
       paramArrayOfDouble6[(1 - 1 + (j - 1) * paramInt14 + paramInt13)] = (paramArrayOfDouble8[(1 - 1 + paramInt19)] / paramArrayOfDouble4[(1 - 1 + (j - 1) * paramInt10 + paramInt9)] / paramArrayOfDouble6[(1 - 1 + (j - 1) * paramInt14 + paramInt13)]);
       paramArrayOfDouble4[(1 - 1 + (j - 1) * paramInt10 + paramInt9)] = -1.0D;
@@ -174,7 +174,7 @@ public final class Dlasd3
       Dgemm.dgemm("N", "N", paramInt2, paramInt4, i, 1.0D, paramArrayOfDouble5, i4 - 1 + (n - 1) * paramInt12 + paramInt11, paramInt12, paramArrayOfDouble2, n - 1 + (1 - 1) * paramInt7 + paramInt6, paramInt7, 0.0D, paramArrayOfDouble4, i4 - 1 + (1 - 1) * paramInt10 + paramInt9, paramInt10);
     }
     j = 1;
-    for (i6 = paramInt4 - 1 + 1; i6 > 0; i6--)
+    for (int i6 = paramInt4 - 1 + 1; i6 > 0; i6--)
     {
       d2 = Dnrm2.dnrm2(paramInt4, paramArrayOfDouble6, 1 - 1 + (j - 1) * paramInt14 + paramInt13, 1);
       paramArrayOfDouble2[(j - 1 + (1 - 1) * paramInt7 + paramInt6)] = (paramArrayOfDouble6[(1 - 1 + (j - 1) * paramInt14 + paramInt13)] / d2);
@@ -203,13 +203,13 @@ public final class Dlasd3
     if ((n <= 1 ? 0 : 1) != 0)
     {
       j = 1;
-      for (i6 = paramInt4 - 1 + 1; i6 > 0; i6--)
+      for (int i6 = paramInt4 - 1 + 1; i6 > 0; i6--)
       {
         paramArrayOfDouble2[(j - 1 + (n - 1) * paramInt7 + paramInt6)] = paramArrayOfDouble2[(j - 1 + (1 - 1) * paramInt7 + paramInt6)];
         j += 1;
       }
       j = i4;
-      for (i6 = i1 - i4 + 1; i6 > 0; i6--)
+      for (int i6 = i1 - i4 + 1; i6 > 0; i6--)
       {
         paramArrayOfDouble7[(n - 1 + (j - 1) * paramInt16 + paramInt15)] = paramArrayOfDouble7[(1 - 1 + (j - 1) * paramInt16 + paramInt15)];
         j += 1;

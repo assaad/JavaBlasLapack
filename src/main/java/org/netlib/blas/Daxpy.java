@@ -27,7 +27,7 @@ public final class Daxpy
         k = (-paramInt1 + 1) * paramInt5 + 1;
       }
       i = 1;
-      for (i1 = paramInt1 - 1 + 1; i1 > 0; i1--)
+      for (int i1 = paramInt1 - 1 + 1; i1 > 0; i1--)
       {
         paramArrayOfDouble2[(k - 1 + paramInt4)] += paramDouble * paramArrayOfDouble1[(j - 1 + paramInt2)];
         j += paramInt3;
@@ -40,7 +40,7 @@ public final class Daxpy
     if ((m != 0 ? 0 : 1) == 0)
     {
       i = 1;
-      for (i1 = m - 1 + 1; i1 > 0; i1--)
+      for (int i1 = m - 1 + 1; i1 > 0; i1--)
       {
         paramArrayOfDouble2[(i - 1 + paramInt4)] += paramDouble * paramArrayOfDouble1[(i - 1 + paramInt2)];
         i += 1;

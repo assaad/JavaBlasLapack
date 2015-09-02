@@ -25,7 +25,7 @@ public final class Sswap
         k = (-paramInt1 + 1) * paramInt5 + 1;
       }
       i = 1;
-      for (i1 = paramInt1 - 1 + 1; i1 > 0; i1--)
+      for (int i1 = paramInt1 - 1 + 1; i1 > 0; i1--)
       {
         f = paramArrayOfFloat1[(j - 1 + paramInt2)];
         paramArrayOfFloat1[(j - 1 + paramInt2)] = paramArrayOfFloat2[(k - 1 + paramInt4)];
@@ -40,7 +40,7 @@ public final class Sswap
     if ((m != 0 ? 0 : 1) == 0)
     {
       i = 1;
-      for (i1 = m - 1 + 1; i1 > 0; i1--)
+      for (int i1 = m - 1 + 1; i1 > 0; i1--)
       {
         f = paramArrayOfFloat1[(i - 1 + paramInt2)];
         paramArrayOfFloat1[(i - 1 + paramInt2)] = paramArrayOfFloat2[(i - 1 + paramInt4)];

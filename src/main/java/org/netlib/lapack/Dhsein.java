@@ -47,14 +47,14 @@ public final class Dhsein
       }
       else if ((paramArrayOfDouble3[(n - 1 + paramInt6)] != 0.0D ? 0 : 1) != 0)
       {
-        if (paramArrayOfBoolean[(n - 1 + paramInt1)] != 0) {
+        if (paramArrayOfBoolean[(n - 1 + paramInt1)] != false) {
           paramintW1.val += 1;
         }
       }
       else
       {
         j = 1;
-        if (((paramArrayOfBoolean[(n - 1 + paramInt1)] == 0) && (paramArrayOfBoolean[(n + 1 - 1 + paramInt1)] == 0) ? 0 : 1) != 0)
+        if (((paramArrayOfBoolean[(n - 1 + paramInt1)] == false) && (paramArrayOfBoolean[(n + 1 - 1 + paramInt1)] == false) ? 0 : 1) != 0)
         {
           paramArrayOfBoolean[(n - 1 + paramInt1)] = true;
           paramintW1.val += 2;
@@ -126,14 +126,14 @@ public final class Dhsein
     }
     i5 = 1;
     n = 1;
-    for (i7 = paramInt2 - 1 + 1; i7 > 0; i7--)
+    for (int i7 = paramInt2 - 1 + 1; i7 > 0; i7--)
     {
-      if (paramArrayOfBoolean[(n - 1 + paramInt1)] != 0)
+      if (paramArrayOfBoolean[(n - 1 + paramInt1)] != false)
       {
         if (bool2)
         {
           m = n;
-          for (i8 = (i1 + 1 - n + -1) / -1; i8 > 0; i8--)
+          for (int i8 = (i1 + 1 - n + -1) / -1; i8 > 0; i8--)
           {
             if ((paramArrayOfDouble1[(m - 1 + (m - 1 - 1) * paramInt4 + paramInt3)] != 0.0D ? 0 : 1) != 0) {
               break;
@@ -144,7 +144,7 @@ public final class Dhsein
           if ((n <= i3 ? 0 : 1) != 0)
           {
             m = n;
-            for (i8 = paramInt2 - 1 - n + 1; i8 > 0; i8--)
+            for (int i8 = paramInt2 - 1 - n + 1; i8 > 0; i8--)
             {
               if ((paramArrayOfDouble1[(m + 1 - 1 + (m - 1) * paramInt4 + paramInt3)] != 0.0D ? 0 : 1) != 0) {
                 break;
@@ -169,7 +169,7 @@ public final class Dhsein
         m = n - 1;
         for (int i8 = (i1 - (n - 1) + -1) / -1; i8 > 0; i8--)
         {
-          if (paramArrayOfBoolean[(m - 1 + paramInt1)] != 0) {}
+          if (paramArrayOfBoolean[(m - 1 + paramInt1)] != false) {}
           if (((Math.abs(paramArrayOfDouble2[(m - 1 + paramInt5)] - d8) + Math.abs(paramArrayOfDouble3[(m - 1 + paramInt6)] - d7) >= d2 ? 0 : 1) != 0 ? 1 : 0) != 0)
           {
             d8 += d2;
@@ -203,7 +203,7 @@ public final class Dhsein
             paramArrayOfInt1[(i4 - 1 + paramInt13)] = 0;
           }
           m = 1;
-          for (i8 = i1 - 1 - 1 + 1; i8 > 0; i8--)
+          for (int i8 = i1 - 1 - 1 + 1; i8 > 0; i8--)
           {
             paramArrayOfDouble4[(m - 1 + (i5 - 1) * paramInt8 + paramInt7)] = 0.0D;
             m += 1;
@@ -211,7 +211,7 @@ public final class Dhsein
           if (j != 0)
           {
             m = 1;
-            for (i8 = i1 - 1 - 1 + 1; i8 > 0; i8--)
+            for (int i8 = i1 - 1 - 1 + 1; i8 > 0; i8--)
             {
               paramArrayOfDouble4[(m - 1 + (i4 - 1) * paramInt8 + paramInt7)] = 0.0D;
               m += 1;
@@ -237,7 +237,7 @@ public final class Dhsein
             paramArrayOfInt2[(i4 - 1 + paramInt14)] = 0;
           }
           m = i3 + 1;
-          for (i8 = paramInt2 - (i3 + 1) + 1; i8 > 0; i8--)
+          for (int i8 = paramInt2 - (i3 + 1) + 1; i8 > 0; i8--)
           {
             paramArrayOfDouble5[(m - 1 + (i5 - 1) * paramInt10 + paramInt9)] = 0.0D;
             m += 1;
@@ -245,7 +245,7 @@ public final class Dhsein
           if (j != 0)
           {
             m = i3 + 1;
-            for (i8 = paramInt2 - (i3 + 1) + 1; i8 > 0; i8--)
+            for (int i8 = paramInt2 - (i3 + 1) + 1; i8 > 0; i8--)
             {
               paramArrayOfDouble5[(m - 1 + (i4 - 1) * paramInt10 + paramInt9)] = 0.0D;
               m += 1;
